@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ data }) => !data.draft);
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+const fmt = (d) => d.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+const url = `https://safoil.my/blog/${post.slug}/`;
+
+const jsonld = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.pubDate.toISOString(),
+  articleSection: post.data.category,
+  mainEntityOfPage: url,
+  author: { '@type': 'Organization', name: 'SafOil' },
+  publisher: {
+    '@type': 'Organization',
+    name: 'SafOil',
+    logo: { '@type': 'ImageObject', url: 'https://safoil.my/assets/og-safoil.jpg' },
+  },
+};
+---
+<Base
+  title={`${post.data.title} | SafOil Insights`}
+  description={post.data.description}
+  canonical={url}
+  ogtype="article"
+  jsonld={jsonld}
+>
+  <section class="subpage-hero">
+    <div class="wrap">
+      <div class="crumbs">
+        <a href="/">Home</a><span class="sep">/</span>
+        <a href="/blog/">Insights</a><span class="sep">/</span>
+        <span class="cur">{post.data.title}</span>
+      </div>
+      <div class="article-meta">
+        <span class="cat">{post.data.category}</span>
+        <span>{fmt(post.data.pubDate)}</span>
+      </div>
+      <h1>{post.data.title}</h1>
+      <p class="lede">{post.data.description}</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="wrap">
+      <article class="prose">
+        <Content />
+      </article>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2>Tell us your spec. Get a price.</h2>
+      <p>FOB &amp; CIF pricing on request. Sample COA available before contract. Response within 3 working days.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="/#quote" class="btn btn-gold">Request a quote →</a>
+        <a href="mailto:sales@safoil.my" class="btn btn-ghost" style="color:var(--paper);border-color:var(--paper)">Email the trade desk</a>
+      </div>
+    </div>
+  </section>
+</Base>

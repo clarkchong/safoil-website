@@ -1,0 +1,89 @@
+---
+const { title, description, canonical, ogtype = 'website', jsonld } = Astro.props;
+const base = 'https://safoil.my';
+const url = canonical || base + Astro.url.pathname;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={url} />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<meta http-equiv="content-language" content="en" />
+<link rel="alternate" hreflang="en" href={url} />
+<link rel="alternate" hreflang="x-default" href={url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={ogtype} />
+<meta property="og:url" content={url} />
+<meta property="og:site_name" content="SafOil" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content={base + '/assets/og-safoil.jpg'} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={base + '/assets/og-safoil.jpg'} />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/safoil.css" />
+{jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a href="/" class="brand" style="text-decoration:none;color:inherit">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"/><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"/></svg>
+      SafOil
+    </a>
+    <div class="nav-links">
+      <a href="/#about">About</a>
+      <a href="/products/biofuel-feedstock-malaysia.html">Products</a>
+      <a href="/#process">How It Works</a>
+      <a href="/#markets">Markets</a>
+      <a href="/blog/">Insights</a>
+      <a href="/#quote">Get a Quote</a>
+    </div>
+    <a href="/#quote" class="btn">Request Pricing</a>
+  </div>
+</nav>
+
+<slot />
+
+<footer style="background:var(--ink);color:var(--paper);padding:60px 0 34px">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid var(--line-d)">
+      <div>
+        <div class="brand" style="color:var(--paper)"><svg width="32" height="32" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"/><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"/></svg>SafOil</div>
+        <p style="color:rgba(241,246,245,.7);font-size:14px;margin-top:14px;max-width:320px">Supplier and exporter of sustainable Used Cooking Oil and waste-oil biofuel feedstock, based in Malaysia. Certified · Traceable · Global.</p>
+      </div>
+      <div>
+        <div class="mono" style="color:var(--brand-soft);margin-bottom:16px">Products</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+          <a href="/products/used-cooking-oil-malaysia.html" style="color:rgba(241,246,245,.8);text-decoration:none">Used Cooking Oil (UCO)</a>
+          <a href="/products/pfad-supplier-malaysia.html" style="color:rgba(241,246,245,.8);text-decoration:none">PFAD</a>
+          <a href="/products/palm-oil-residue-feedstock.html" style="color:rgba(241,246,245,.8);text-decoration:none">POME &amp; EFB Oil</a>
+          <a href="/products/acid-oil-supplier-malaysia.html" style="color:rgba(241,246,245,.8);text-decoration:none">Acid Oils &amp; SBEO</a>
+          <a href="/blog/" style="color:rgba(241,246,245,.8);text-decoration:none">Insights</a>
+        </div>
+      </div>
+      <div>
+        <div class="mono" style="color:var(--brand-soft);margin-bottom:16px">Contact</div>
+        <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
+          <a href="tel:+60162298119" style="color:rgba(241,246,245,.8);text-decoration:none">+60 16-229 8119 (Office)</a>
+          <a href="mailto:sales@safoil.my" style="color:rgba(241,246,245,.8);text-decoration:none">sales@safoil.my</a>
+          <a href="https://wa.me/60162298119" style="color:rgba(241,246,245,.8);text-decoration:none">WhatsApp</a>
+          <a href="/#location" style="color:rgba(241,246,245,.8);text-decoration:none">Kuala Lumpur, Malaysia</a>
+        </div>
+      </div>
+    </div>
+    <div style="padding-top:24px;font-size:12.5px;color:rgba(241,246,245,.55)">© 2026 SafOil. All rights reserved. · Reg. No. 20251026727 · Sustainable · Traceable · Global</div>
+  </div>
+</footer>
+</body>
+</html>

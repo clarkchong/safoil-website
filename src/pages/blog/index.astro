@@ -1,0 +1,43 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const posts = (await getCollection('blog', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const fmt = (d) => d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+---
+<Base
+  title="Market Insights — Biofuel Feedstock & UCO Trade | SafOil"
+  description="Market commentary on UCO pricing, ISCC certification, RED III, SAF mandates and the renewable-feedstock trade — written for biofuel buyers and partners by the SafOil trade desk."
+  canonical="https://safoil.my/blog/"
+>
+  <section class="subpage-hero">
+    <div class="wrap">
+      <div class="crumbs">
+        <a href="/">Home</a><span class="sep">/</span>
+        <span class="cur">Insights</span>
+      </div>
+      <span class="eyebrow">Insights</span>
+      <h1>Market intelligence from our trade desk.</h1>
+      <p class="lede">Commentary on UCO pricing, sustainability regulation and the renewable-feedstock trade — written for the buyers and partners we work with.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="wrap">
+      <div class="related-grid">
+        {posts.map((post) => (
+          <a class="rel-card" href={`/blog/${post.slug}/`}>
+            <div class="rk">{post.data.category} · {fmt(post.data.pubDate)}</div>
+            <h4>{post.data.title}</h4>
+            <p>{post.data.description}</p>
+          </a>
+        ))}
+      </div>
+      {posts.length === 0 && (
+        <p style="color:var(--mute)">No posts yet — check back soon.</p>
+      )}
+    </div>
+  </section>
+</Base>
