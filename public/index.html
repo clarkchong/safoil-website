@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SafOil — UCO, Tallow, PFAD, POME &amp; Acid Oil Supplier | Biofuel Feedstock Exporter Malaysia</title>
@@ -30,8 +29,8 @@
 <link rel="alternate" hreflang="en" href="https://safoil.my/">
 <link rel="alternate" hreflang="x-default" href="https://safoil.my/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 <!-- JSON-LD structured data for SEO -->
 <script type="application/ld+json">
 {
@@ -373,6 +372,11 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   .row2{grid-template-columns:1fr}
   .hero-stats{gap:26px;flex-wrap:wrap}
 }
+
+.lang-switch{display:inline-flex;align-items:center;margin:0 8px}
+.lang-switch select{background:rgba(255,255,255,0.08);color:inherit;border:1px solid rgba(255,255,255,0.25);border-radius:6px;padding:6px 10px;font-size:14px;font-family:inherit;cursor:pointer}
+.lang-switch select:hover{background:rgba(255,255,255,0.16)}
+@media (max-width:900px){.lang-switch{margin:8px 0}}
 </style>
 </head>
 <body>
@@ -380,19 +384,25 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
 <nav>
   <div class="nav-in">
     <a href="#" class="brand" style="text-decoration:none;color:inherit">
-      <svg width="34" height="34" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"/><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"/></svg>
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"></circle><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"></path></svg>
       SafOil
     </a>
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="products/biofuel-feedstock-malaysia.html">Products</a>
-      <a href="#process">How It Works</a>
-      <a href="#markets">Markets</a>
-      <a href="#location">Find Us</a>
-      <a href="#blog">Insights</a>
-      <a href="#quote">Get a Quote</a>
+      <a href="#about" data-i18n="1">About</a>
+      <a href="products/biofuel-feedstock-malaysia.html" data-i18n="2">Products</a>
+      <a href="#process" data-i18n="3">How It Works</a>
+      <a href="#markets" data-i18n="4">Markets</a>
+      <a href="#location" data-i18n="5">Find Us</a>
+      <a href="#blog" data-i18n="6">Insights</a>
+      <a href="#quote" data-i18n="7">Get a Quote</a>
     </div>
-    <a href="#quote" class="btn">Request Pricing</a>
+    <div class="lang-switch"><select id="lang-select" aria-label="Select language">
+  <option value="en">EN</option>
+  <option value="zh-CN">中文</option>
+  <option value="th">ไทย</option>
+  <option value="vi">Tiếng Việt</option>
+  <option value="ja">日本語</option>
+</select></div><a href="#quote" class="btn" data-i18n="8">Request Pricing</a>
   </div>
 </nav>
 
@@ -400,11 +410,11 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap hero-grid">
     <div>
       <span class="tag mono"><span class="dot"></span>ISCC-aligned · Traceable feedstock</span>
-      <h1>Turning waste oil into the world's <span class="gd">cleaner fuel</span>.</h1>
-      <p class="hero-sub">SafOil sources, supplies and exports consistent-grade Used Cooking Oil, tallow, PFAD, POME and acid oils from Malaysia — certified, traceable feedstock for biodiesel, renewable diesel and SAF producers worldwide.</p>
+      <h1 data-i18n="9">Turning waste oil into the world's <span class="gd">cleaner fuel</span>.</h1>
+      <p class="hero-sub" data-i18n="10">SafOil sources, supplies and exports consistent-grade Used Cooking Oil, tallow, PFAD, POME and acid oils from Malaysia — certified, traceable feedstock for biodiesel, renewable diesel and SAF producers worldwide.</p>
       <div class="hero-cta">
-        <a href="#quote" class="btn btn-gold">Get an export quote →</a>
-        <a href="#products" class="btn btn-ghost">View specifications</a>
+        <a href="#quote" class="btn btn-gold" data-i18n="11">Get an export quote →</a>
+        <a href="#products" class="btn btn-ghost" data-i18n="12">View specifications</a>
       </div>
       <div class="hero-stats">
         <div class="stat"><div class="n">10<span class="u"> grades</span></div><div class="l">Feedstock products</div></div>
@@ -437,25 +447,25 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow mono">About Us</span>
-      <h2>A dedicated biofuel feedstock specialist.</h2>
+      <h2 data-i18n="13">A dedicated biofuel feedstock specialist.</h2>
     </div>
     <div class="about-grid">
       <div>
-        <p class="about-lead">SafOil is a Malaysia-based supplier and exporter of waste-based and residual oil feedstock for the global biofuel industry.</p>
-        <p>We source, process and export a full range of feedstocks — Used Cooking Oil, tallow, fish oil, PFAD, POME, EFB oil, spent bleaching earth oil and vegetable acid oils — supplying biodiesel, renewable diesel and sustainable aviation fuel producers across Europe, North America and Asia.</p>
-        <p>Built around the principles of consistency, compliance and clean documentation, SafOil combines disciplined trade execution with ISCC-aligned traceability to give refiners a feedstock partner they can rely on — shipment after shipment.</p>
+        <p class="about-lead" data-i18n="14">SafOil is a Malaysia-based supplier and exporter of waste-based and residual oil feedstock for the global biofuel industry.</p>
+        <p data-i18n="15">We source, process and export a full range of feedstocks — Used Cooking Oil, tallow, fish oil, PFAD, POME, EFB oil, spent bleaching earth oil and vegetable acid oils — supplying biodiesel, renewable diesel and sustainable aviation fuel producers across Europe, North America and Asia.</p>
+        <p data-i18n="16">Built around the principles of consistency, compliance and clean documentation, SafOil combines disciplined trade execution with ISCC-aligned traceability to give refiners a feedstock partner they can rely on — shipment after shipment.</p>
         <div class="about-vals">
-          <div class="aval"><h4>Feedstock expertise</h4><p>Deep knowledge of waste-oil and acid-oil markets, grades and global feedstock dynamics.</p></div>
-          <div class="aval"><h4>Customer-centric</h4><p>Tailored solutions built around each client's specific volume, spec and logistics needs.</p></div>
-          <div class="aval"><h4>Integrity first</h4><p>Honesty and transparency in every dealing — the foundation of long-term partnerships.</p></div>
-          <div class="aval"><h4>Reliable supply chain</h4><p>Strong supplier partnerships and a robust network ensuring consistent, quality supply.</p></div>
+          <div class="aval"><h4 data-i18n="17">Feedstock expertise</h4><p data-i18n="18">Deep knowledge of waste-oil and acid-oil markets, grades and global feedstock dynamics.</p></div>
+          <div class="aval"><h4 data-i18n="19">Customer-centric</h4><p data-i18n="20">Tailored solutions built around each client's specific volume, spec and logistics needs.</p></div>
+          <div class="aval"><h4 data-i18n="21">Integrity first</h4><p data-i18n="22">Honesty and transparency in every dealing — the foundation of long-term partnerships.</p></div>
+          <div class="aval"><h4 data-i18n="23">Reliable supply chain</h4><p data-i18n="24">Strong supplier partnerships and a robust network ensuring consistent, quality supply.</p></div>
         </div>
       </div>
       <div class="founder">
         <div class="frole">Our Commitment</div>
-        <h3>Bridging supply, delivering excellence.</h3>
-        <p class="quote-mk">"We are committed to connecting reliable feedstock supply with the world's biofuel producers — delivering quality, traceability and integrity in every shipment."</p>
-        <p class="fname">A specialist team with expertise in international trade, feedstock sourcing and the compliance requirements of the global renewable-fuels market.</p>
+        <h3 data-i18n="25">Bridging supply, delivering excellence.</h3>
+        <p class="quote-mk" data-i18n="26">"We are committed to connecting reliable feedstock supply with the world's biofuel producers — delivering quality, traceability and integrity in every shipment."</p>
+        <p class="fname" data-i18n="27">A specialist team with expertise in international trade, feedstock sourcing and the compliance requirements of the global renewable-fuels market.</p>
       </div>
     </div>
   </div>
@@ -465,78 +475,78 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow mono">Product Range</span>
-      <h2>Waste &amp; residue feedstock, ready to ship.</h2>
-      <p>SafOil supplies a full range of waste-based and residual oil feedstocks for biodiesel, renewable diesel (HVO) and SAF producers — from used cooking oil and animal fats to palm residues and vegetable acid oils. Every consignment is lab-tested before loading, with a full certificate of analysis per batch and ISCC-aligned traceability.</p>
+      <h2 data-i18n="28">Waste &amp; residue feedstock, ready to ship.</h2>
+      <p data-i18n="29">SafOil supplies a full range of waste-based and residual oil feedstocks for biodiesel, renewable diesel (HVO) and SAF producers — from used cooking oil and animal fats to palm residues and vegetable acid oils. Every consignment is lab-tested before loading, with a full certificate of analysis per batch and ISCC-aligned traceability.</p>
     </div>
     <div class="prod-grid">
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M7 3h10v4l-2 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2V9L7 7z"/></svg></div>
-        <h3>Used Cooking Oil (UCO)</h3>
-        <p>Filtered used cooking oil for biodiesel and oleochemical conversion — reliable export volumes at competitive FOB pricing. Standard and low-FFA premium grades available.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M7 3h10v4l-2 2v10a2 2 0 01-2 2h-2a2 2 0 01-2-2V9L7 7z"></path></svg></div>
+        <h3 data-i18n="30">Used Cooking Oil (UCO)</h3>
+        <p data-i18n="31">Filtered used cooking oil for biodiesel and oleochemical conversion — reliable export volumes at competitive FOB pricing. Standard and low-FFA premium grades available.</p>
         <div class="spec"><span class="chip">FFA 3–5%</span><span class="chip">MIU &lt; 2%</span><span class="chip">Flexitank / ISO tank</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M4 14c2-1 4-1 6 0s4 1 6 0 4-1 4-1M4 10c2-1 4-1 6 0s4 1 6 0 4-1 4-1M6 18h12"/></svg></div>
-        <h3>Tallow (Animal Fat)</h3>
-        <p>Rendered animal-fat tallow for biodiesel and renewable-diesel feedstock. A high-energy, category-graded fat stream suited to FAME and HVO processing.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M4 14c2-1 4-1 6 0s4 1 6 0 4-1 4-1M4 10c2-1 4-1 6 0s4 1 6 0 4-1 4-1M6 18h12"></path></svg></div>
+        <h3 data-i18n="32">Tallow (Animal Fat)</h3>
+        <p data-i18n="33">Rendered animal-fat tallow for biodiesel and renewable-diesel feedstock. A high-energy, category-graded fat stream suited to FAME and HVO processing.</p>
         <div class="spec"><span class="chip">Cat 1 / Cat 3</span><span class="chip">FFA on grade</span><span class="chip">Flexi / bulk</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M3 12c4-5 11-5 15 0-4 5-11 5-15 0zM18 12h3M7 11.5v1"/></svg></div>
-        <h3>Fish Oil</h3>
-        <p>Residual and waste-grade fish oil for advanced biofuel and oleochemical applications — a marine lipid feedstock with strong cold-flow characteristics.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M3 12c4-5 11-5 15 0-4 5-11 5-15 0zM18 12h3M7 11.5v1"></path></svg></div>
+        <h3 data-i18n="34">Fish Oil</h3>
+        <p data-i18n="35">Residual and waste-grade fish oil for advanced biofuel and oleochemical applications — a marine lipid feedstock with strong cold-flow characteristics.</p>
         <div class="spec"><span class="chip">Residual grade</span><span class="chip">On enquiry</span><span class="chip">ISO tank / bulk</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M12 2c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z"/></svg></div>
-        <h3>PFAD</h3>
-        <p>Palm Fatty Acid Distillate — a high-FFA palm refining co-product widely used as biodiesel and oleochemical feedstock. Consistent quality, bulk export volumes.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M12 2c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z"></path></svg></div>
+        <h3 data-i18n="36">PFAD</h3>
+        <p data-i18n="37">Palm Fatty Acid Distillate — a high-FFA palm refining co-product widely used as biodiesel and oleochemical feedstock. Consistent quality, bulk export volumes.</p>
         <div class="spec"><span class="chip">FFA &gt; 70%</span><span class="chip">Bulk vessel</span><span class="chip">ISCC-aligned</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M5 20c0-6 3-10 7-10s7 4 7 10M12 10V4M9 6l3-2 3 2"/></svg></div>
-        <h3>POME Oil</h3>
-        <p>Palm Oil Mill Effluent oil — an Annex IX advanced feedstock recovered from palm milling. Double-counting eligible under RED II for renewable diesel and SAF.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M5 20c0-6 3-10 7-10s7 4 7 10M12 10V4M9 6l3-2 3 2"></path></svg></div>
+        <h3 data-i18n="38">POME Oil</h3>
+        <p data-i18n="39">Palm Oil Mill Effluent oil — an Annex IX advanced feedstock recovered from palm milling. Double-counting eligible under RED II for renewable diesel and SAF.</p>
         <div class="spec"><span class="chip">Annex IX</span><span class="chip">High FFA</span><span class="chip">Bulk / ISO tank</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M12 3v8M12 11c-3 0-5 2-5 5a5 5 0 0010 0c0-3-2-5-5-5zM9 7l3-3 3 3"/></svg></div>
-        <h3>EFB Oil</h3>
-        <p>Empty Fruit Bunch oil — a residual palm-biomass oil stream for advanced biofuel production, supporting low-carbon-intensity feedstock requirements.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M12 3v8M12 11c-3 0-5 2-5 5a5 5 0 0010 0c0-3-2-5-5-5zM9 7l3-3 3 3"></path></svg></div>
+        <h3 data-i18n="40">EFB Oil</h3>
+        <p data-i18n="41">Empty Fruit Bunch oil — a residual palm-biomass oil stream for advanced biofuel production, supporting low-carbon-intensity feedstock requirements.</p>
         <div class="spec"><span class="chip">Residue stream</span><span class="chip">On enquiry</span><span class="chip">Bulk vessel</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M4 18h16M6 18c0-4 2-7 6-7s6 3 6 7M9 9l3-5 3 5"/></svg></div>
-        <h3>Spent Bleaching Earth Oil (SBEO)</h3>
-        <p>Oil recovered from spent bleaching earth — an Annex IX Part A advanced residue feedstock. High-FFA stream for esterification and HVO processing routes.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M4 18h16M6 18c0-4 2-7 6-7s6 3 6 7M9 9l3-5 3 5"></path></svg></div>
+        <h3 data-i18n="42">Spent Bleaching Earth Oil (SBEO)</h3>
+        <p data-i18n="43">Oil recovered from spent bleaching earth — an Annex IX Part A advanced residue feedstock. High-FFA stream for esterification and HVO processing routes.</p>
         <div class="spec"><span class="chip">Annex IX Part A</span><span class="chip">FFA up to 25%</span><span class="chip">ISO tank</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M12 4c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9zM12 13l-2 2M12 13l2 2"/></svg></div>
-        <h3>Soya Acid Oil</h3>
-        <p>Soybean acid oil — a high-FFA vegetable-oil refining residue for biodiesel and oleochemical feedstock, sourced for consistent export supply.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M12 4c-3 3-5 6-5 9a5 5 0 0010 0c0-3-2-6-5-9zM12 13l-2 2M12 13l2 2"></path></svg></div>
+        <h3 data-i18n="44">Soya Acid Oil</h3>
+        <p data-i18n="45">Soybean acid oil — a high-FFA vegetable-oil refining residue for biodiesel and oleochemical feedstock, sourced for consistent export supply.</p>
         <div class="spec"><span class="chip">High FFA</span><span class="chip">Acid oil</span><span class="chip">Flexi / bulk</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M12 5c-4 2-6 5-6 9a6 6 0 0012 0c0-4-2-7-6-9zM8 9c1 1 2 1 4 0"/></svg></div>
-        <h3>Cotton Seed Acid Oil</h3>
-        <p>Cottonseed acid oil — a vegetable acid-oil residue stream for biodiesel and oleochemical conversion, available for contract and spot supply.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M12 5c-4 2-6 5-6 9a6 6 0 0012 0c0-4-2-7-6-9zM8 9c1 1 2 1 4 0"></path></svg></div>
+        <h3 data-i18n="46">Cotton Seed Acid Oil</h3>
+        <p data-i18n="47">Cottonseed acid oil — a vegetable acid-oil residue stream for biodiesel and oleochemical conversion, available for contract and spot supply.</p>
         <div class="spec"><span class="chip">High FFA</span><span class="chip">Acid oil</span><span class="chip">On enquiry</span></div>
       </div>
 
       <div class="card">
-        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M6 16c0-5 3-9 6-9s6 4 6 9M9 7c1-2 5-2 6 0M4 19h16"/></svg></div>
-        <h3>Rice Bran Acid Oil</h3>
-        <p>Rice bran acid oil — a high-FFA by-product of rice bran oil refining, used as biodiesel feedstock and in oleochemical applications. Steady volumes from Asian sources.</p>
+        <div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.8"><path d="M6 16c0-5 3-9 6-9s6 4 6 9M9 7c1-2 5-2 6 0M4 19h16"></path></svg></div>
+        <h3 data-i18n="48">Rice Bran Acid Oil</h3>
+        <p data-i18n="49">Rice bran acid oil — a high-FFA by-product of rice bran oil refining, used as biodiesel feedstock and in oleochemical applications. Steady volumes from Asian sources.</p>
         <div class="spec"><span class="chip">High FFA</span><span class="chip">Acid oil</span><span class="chip">Flexi / ISO tank</span></div>
       </div>
 
@@ -546,11 +556,11 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
       <div class="coa-card">
         <div class="ct">
           <span class="pill">Free download</span>
-          <h3>See our specification before you enquire.</h3>
-          <p>Download a sample Certificate of Analysis showing our typical UCO grade — FFA, moisture, sulphur and full quality parameters. Representative values; a signed batch COA is issued per shipment.</p>
+          <h3 data-i18n="50">See our specification before you enquire.</h3>
+          <p data-i18n="51">Download a sample Certificate of Analysis showing our typical UCO grade — FFA, moisture, sulphur and full quality parameters. Representative values; a signed batch COA is issued per shipment.</p>
         </div>
         <div class="ca">
-          <button class="btn btn-gold" onclick="openCoa()">Download sample COA →</button>
+          <button class="btn btn-gold" onclick="openCoa()" data-i18n="52">Download sample COA →</button>
         </div>
       </div>
     </div>
@@ -561,14 +571,14 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow mono">How It Works</span>
-      <h2>From supplier to certified cargo.</h2>
-      <p>A transparent, four-stage chain that keeps your feedstock compliant and your documentation audit-ready.</p>
+      <h2 data-i18n="53">From supplier to certified cargo.</h2>
+      <p data-i18n="54">A transparent, four-stage chain that keeps your feedstock compliant and your documentation audit-ready.</p>
     </div>
     <div class="steps">
-      <div class="step"><div class="num">01</div><h3>Source</h3><p>Feedstock is sourced from a vetted network of trusted suppliers and processors across Malaysia and the region.</p></div>
-      <div class="step"><div class="num">02</div><h3>Quality-check</h3><p>Material is checked and, where needed, processed to meet target FFA and moisture grades before dispatch.</p></div>
-      <div class="step"><div class="num">03</div><h3>Verify</h3><p>Independent lab COA per batch, with full chain-of-custody and sustainability documentation.</p></div>
-      <div class="step"><div class="num">04</div><h3>Export</h3><p>Loaded in flexitanks, ISO tanks or bulk vessels — FOB or CIF to your port of choice.</p></div>
+      <div class="step"><div class="num">01</div><h3 data-i18n="55">Source</h3><p data-i18n="56">Feedstock is sourced from a vetted network of trusted suppliers and processors across Malaysia and the region.</p></div>
+      <div class="step"><div class="num">02</div><h3 data-i18n="57">Quality-check</h3><p data-i18n="58">Material is checked and, where needed, processed to meet target FFA and moisture grades before dispatch.</p></div>
+      <div class="step"><div class="num">03</div><h3 data-i18n="59">Verify</h3><p data-i18n="60">Independent lab COA per batch, with full chain-of-custody and sustainability documentation.</p></div>
+      <div class="step"><div class="num">04</div><h3 data-i18n="61">Export</h3><p data-i18n="62">Loaded in flexitanks, ISO tanks or bulk vessels — FOB or CIF to your port of choice.</p></div>
     </div>
   </div>
 </section>
@@ -577,13 +587,13 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow mono">Why SafOil</span>
-      <h2>Built for procurement teams that can't take risks.</h2>
-      <p>Refiners buy on three things: consistency, certification and clean paperwork. We are built around all three.</p>
+      <h2 data-i18n="63">Built for procurement teams that can't take risks.</h2>
+      <p data-i18n="64">Refiners buy on three things: consistency, certification and clean paperwork. We are built around all three.</p>
     </div>
     <div class="why-grid">
-      <div class="why-card"><div class="wn">01 — CONSISTENCY</div><h3>Reliable grade, every batch</h3><p>Standardised processing and per-batch testing mean the spec you contract is the spec you receive — shipment after shipment.</p></div>
-      <div class="why-card"><div class="wn">02 — COMPLIANCE</div><h3>Certification-ready supply</h3><p>ISCC-aligned, RED II–compliant documentation with full chain-of-custody, so your feedstock counts toward your sustainability targets.</p></div>
-      <div class="why-card"><div class="wn">03 — LOGISTICS</div><h3>Door-to-port handled</h3><p>Flexitank, ISO tank or bulk vessel, FOB or CIF. A dedicated trade and logistics desk manages documentation and shipping end to end.</p></div>
+      <div class="why-card"><div class="wn">01 — CONSISTENCY</div><h3 data-i18n="65">Reliable grade, every batch</h3><p data-i18n="66">Standardised processing and per-batch testing mean the spec you contract is the spec you receive — shipment after shipment.</p></div>
+      <div class="why-card"><div class="wn">02 — COMPLIANCE</div><h3 data-i18n="67">Certification-ready supply</h3><p data-i18n="68">ISCC-aligned, RED II–compliant documentation with full chain-of-custody, so your feedstock counts toward your sustainability targets.</p></div>
+      <div class="why-card"><div class="wn">03 — LOGISTICS</div><h3 data-i18n="69">Door-to-port handled</h3><p data-i18n="70">Flexitank, ISO tank or bulk vessel, FOB or CIF. A dedicated trade and logistics desk manages documentation and shipping end to end.</p></div>
     </div>
   </div>
 </section>
@@ -592,11 +602,11 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap mk-grid">
     <div>
       <span class="eyebrow mono">Global Reach</span>
-      <h2 style="font-size:clamp(34px,4.2vw,52px)">We ship where demand is.</h2>
+      <h2 style="font-size:clamp(34px,4.2vw,52px)" data-i18n="71">We ship where demand is.</h2>
       <ul class="mk-list">
-        <li><span class="mk-ic">🇪🇺</span><div><h3>European Union</h3><p>RED II–driven demand from biodiesel and HVO refiners seeking waste-based feedstock.</p></div></li>
-        <li><span class="mk-ic">🇺🇸</span><div><h3>North America</h3><p>Renewable diesel and SAF producers under LCFS and RFS incentive programmes.</p></div></li>
-        <li><span class="mk-ic">🌏</span><div><h3>East &amp; South Asia</h3><p>Regional oleochemical and biofuel buyers seeking steady, traceable supply.</p></div></li>
+        <li><span class="mk-ic">🇪🇺</span><div><h3 data-i18n="72">European Union</h3><p data-i18n="73">RED II–driven demand from biodiesel and HVO refiners seeking waste-based feedstock.</p></div></li>
+        <li><span class="mk-ic">🇺🇸</span><div><h3 data-i18n="74">North America</h3><p data-i18n="75">Renewable diesel and SAF producers under LCFS and RFS incentive programmes.</p></div></li>
+        <li><span class="mk-ic">🌏</span><div><h3 data-i18n="76">East &amp; South Asia</h3><p data-i18n="77">Regional oleochemical and biofuel buyers seeking steady, traceable supply.</p></div></li>
       </ul>
     </div>
     <div class="mk-map">
@@ -610,16 +620,14 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow mono">Find Us</span>
-      <h2>A real presence in Batu Caves, Selangor.</h2>
-      <p>SafOil operates from a commercial office in Batu Caves, Selangor, Malaysia — giving our partners the assurance of a legitimate, contactable business with a physical base in one of Asia's key trading hubs.</p>
+      <h2 data-i18n="78">A real presence in Batu Caves, Selangor.</h2>
+      <p data-i18n="79">SafOil operates from a commercial office in Batu Caves, Selangor, Malaysia — giving our partners the assurance of a legitimate, contactable business with a physical base in one of Asia's key trading hubs.</p>
     </div>
     <div class="loc-grid">
       <div class="loc-info">
         <div class="loc-card">
           <h3>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.9"><path d="M12 21s-7-6.3-7-11a7 7 0 0114 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-            Head Office
-          </h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="1.9"><path d="M12 21s-7-6.3-7-11a7 7 0 0114 0c0 4.7-7 11-7 11z"></path><circle cx="12" cy="10" r="2.5"></circle></svg><span data-i18n="80">Head Office</span></h3>
           <p class="loc-addr">
             34-A, Jalan SG 3/2,<br>
             Pusat Bandar Sri Gombak,<br>
@@ -635,21 +643,18 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
             <div class="loc-row"><span class="lk">Reg. No.</span><span>20251026727</span></div>
           </div>
           <div class="loc-cta">
-            <a href="https://www.google.com/maps/dir/?api=1&destination=34-A+Jalan+SG+3%2F2+Pusat+Bandar+Sri+Gombak+68100+Batu+Caves+Selangor" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:16px">Get directions →</a>
-            <a href="https://wa.me/60162298119" target="_blank" rel="noopener" class="btn" style="margin-top:16px;background:#25D366;color:#0b3d1f">WhatsApp us</a>
+            <a href="https://www.google.com/maps/dir/?api=1&amp;destination=34-A+Jalan+SG+3%2F2+Pusat+Bandar+Sri+Gombak+68100+Batu+Caves+Selangor" target="_blank" rel="noopener" class="btn btn-gold" style="margin-top:16px" data-i18n="85">Get directions →</a>
+            <a href="https://wa.me/60162298119" target="_blank" rel="noopener" class="btn" style="margin-top:16px;background:#25D366;color:#0b3d1f" data-i18n="86">WhatsApp us</a>
           </div>
         </div>
         <div class="loc-badges">
-          <span class="loc-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Registered Malaysian company</span>
-          <span class="loc-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Physical office &amp; warehouse network</span>
-          <span class="loc-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Visits by appointment</span>
+          <span class="loc-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>Registered Malaysian company</span>
+          <span class="loc-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>Physical office &amp; warehouse network</span>
+          <span class="loc-badge"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="var(--leaf)" stroke-width="2"><path d="M20 6L9 17l-5-5"></path></svg>Visits by appointment</span>
         </div>
       </div>
       <div class="loc-map">
-        <iframe
-          src="https://www.google.com/maps?q=34-A%2C%20Jalan%20SG%203%2F2%2C%20Pusat%20Bandar%20Sri%20Gombak%2C%2068100%20Batu%20Caves%2C%20Selangor&output=embed"
-          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="SafOil office location — Batu Caves, Selangor"></iframe>
+        <iframe src="https://www.google.com/maps?q=34-A%2C%20Jalan%20SG%203%2F2%2C%20Pusat%20Bandar%20Sri%20Gombak%2C%2068100%20Batu%20Caves%2C%20Selangor&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="SafOil office location — Batu Caves, Selangor"></iframe>
       </div>
     </div>
   </div>
@@ -659,44 +664,44 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap">
     <div class="sec-head">
       <span class="eyebrow mono">Insights</span>
-      <h2>Market intelligence from our trade desk.</h2>
-      <p>Market commentary on UCO pricing, sustainability regulation and the renewable-feedstock trade — written for the buyers and partners we work with.</p>
+      <h2 data-i18n="87">Market intelligence from our trade desk.</h2>
+      <p data-i18n="88">Market commentary on UCO pricing, sustainability regulation and the renewable-feedstock trade — written for the buyers and partners we work with.</p>
     </div>
     <div class="blog-grid">
       <article class="post" onclick="openArticle('a1')">
         <div class="pimg"><span>Market</span></div>
         <div class="pbody">
           <div class="pdate">June 2026</div>
-          <h3>What's moving UCO prices into 2026</h3>
-          <p>How EU RED III targets, SAF mandates and feedstock competition are reshaping demand for waste-based oils.</p>
-          <a class="pread" href="javascript:void(0)" onclick="event.stopPropagation();openArticle('a1')">Read article →</a>
+          <h3 data-i18n="89">What's moving UCO prices into 2026</h3>
+          <p data-i18n="90">How EU RED III targets, SAF mandates and feedstock competition are reshaping demand for waste-based oils.</p>
+          <a class="pread" href="javascript:void(0)" onclick="event.stopPropagation();openArticle('a1')" data-i18n="91">Read article →</a>
         </div>
       </article>
       <article class="post" onclick="openArticle('a2')">
         <div class="pimg alt"><span>Compliance</span></div>
         <div class="pbody">
           <div class="pdate">May 2026</div>
-          <h3>ISCC certification, explained for buyers</h3>
-          <p>What chain-of-custody documentation actually proves, and why it matters for your RED II reporting.</p>
-          <a class="pread" href="javascript:void(0)" onclick="event.stopPropagation();openArticle('a2')">Read article →</a>
+          <h3 data-i18n="92">ISCC certification, explained for buyers</h3>
+          <p data-i18n="93">What chain-of-custody documentation actually proves, and why it matters for your RED II reporting.</p>
+          <a class="pread" href="javascript:void(0)" onclick="event.stopPropagation();openArticle('a2')" data-i18n="94">Read article →</a>
         </div>
       </article>
       <article class="post" onclick="openArticle('a3')">
         <div class="pimg alt2"><span>Sustainability</span></div>
         <div class="pbody">
           <div class="pdate">May 2026</div>
-          <h3>From supplier to cargo: the UCO journey</h3>
-          <p>A look inside the sourcing, quality-control and export chain behind every traceable shipment.</p>
-          <a class="pread" href="javascript:void(0)" onclick="event.stopPropagation();openArticle('a3')">Read article →</a>
+          <h3 data-i18n="95">From supplier to cargo: the UCO journey</h3>
+          <p data-i18n="96">A look inside the sourcing, quality-control and export chain behind every traceable shipment.</p>
+          <a class="pread" href="javascript:void(0)" onclick="event.stopPropagation();openArticle('a3')" data-i18n="97">Read article →</a>
         </div>
       </article>
     </div>
     <div class="blog-cta">
       <div>
-        <h3>Get our market insights by email</h3>
-        <p>Join our list for occasional notes on UCO pricing and renewable-feedstock regulation. No spam — just the trade intelligence our partners value.</p>
+        <h3 data-i18n="98">Get our market insights by email</h3>
+        <p data-i18n="99">Join our list for occasional notes on UCO pricing and renewable-feedstock regulation. No spam — just the trade intelligence our partners value.</p>
       </div>
-      <a href="mailto:sales@safoil.my?subject=Subscribe%20to%20SafOil%20Insights" class="btn btn-gold">Subscribe →</a>
+      <a href="mailto:sales@safoil.my?subject=Subscribe%20to%20SafOil%20Insights" class="btn btn-gold" data-i18n="100">Subscribe →</a>
     </div>
   </div>
 </section>
@@ -705,40 +710,40 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap quote-grid">
     <div class="qpitch">
       <span class="eyebrow mono">Get Started</span>
-      <h2>Tell us your spec. Get a price.</h2>
+      <h2 data-i18n="101">Tell us your spec. Get a price.</h2>
       <ul>
-        <li>Prompt response to trade enquiries</li>
-        <li>FOB &amp; CIF pricing on request</li>
-        <li>Sample COA available before contract</li>
-        <li>Long-term offtake agreements welcome</li>
+        <li data-i18n="102">Prompt response to trade enquiries</li>
+        <li data-i18n="103">FOB &amp; CIF pricing on request</li>
+        <li data-i18n="104">Sample COA available before contract</li>
+        <li data-i18n="105">Long-term offtake agreements welcome</li>
       </ul>
       <div class="contact-direct">
         <span class="mono" style="color:var(--mute)">Or reach us directly</span>
         <a href="mailto:sales@safoil.my">✉ sales@safoil.my</a>
         <a href="tel:+60162298119">☏ +60 16-229 8119</a>
         <div class="cd-chips">
-          <a href="https://wa.me/60162298119" target="_blank" rel="noopener" class="cd-chip wa">WhatsApp</a>
+          <a href="https://wa.me/60162298119" target="_blank" rel="noopener" class="cd-chip wa" data-i18n="108">WhatsApp</a>
         </div>
       </div>
     </div>
     <div class="qf">
-      <h3>Request a quote</h3>
-      <p class="qs">No obligation — trade enquiries only.</p>
-      <div class="field"><label>Company name</label><input type="text" id="q_company" placeholder="Your company"></div>
+      <h3 data-i18n="109">Request a quote</h3>
+      <p class="qs" data-i18n="110">No obligation — trade enquiries only.</p>
+      <div class="field"><label data-i18n="111">Company name</label><input type="text" id="q_company" placeholder="Your company"></div>
       <div class="row2">
-        <div class="field"><label>Contact name</label><input type="text" id="q_name" placeholder="Full name"></div>
-        <div class="field"><label>Business email</label><input type="email" id="q_email" placeholder="you@company.com"></div>
+        <div class="field"><label data-i18n="112">Contact name</label><input type="text" id="q_name" placeholder="Full name"></div>
+        <div class="field"><label data-i18n="113">Business email</label><input type="email" id="q_email" placeholder="you@company.com"></div>
       </div>
       <div class="row2">
-        <div class="field"><label>Product</label>
+        <div class="field"><label data-i18n="114">Product</label>
           <select id="q_product"><option>Used Cooking Oil (UCO)</option><option>Tallow</option><option>Fish Oil</option><option>PFAD</option><option>POME Oil</option><option>EFB Oil</option><option>Spent Bleaching Earth Oil (SBEO)</option><option>Soya Acid Oil</option><option>Cotton Seed Acid Oil</option><option>Rice Bran Acid Oil</option><option>Others</option></select>
         </div>
-        <div class="field"><label>Volume (MT / month)</label><input type="text" id="q_volume" placeholder="e.g. 200"></div>
+        <div class="field"><label data-i18n="115">Volume (MT / month)</label><input type="text" id="q_volume" placeholder="e.g. 200"></div>
       </div>
-      <div class="field"><label>Destination port</label><input type="text" id="q_port" placeholder="e.g. Rotterdam"></div>
-      <div class="field"><label>Notes</label><textarea rows="2" id="q_notes" placeholder="Spec requirements, Incoterms, timeline…"></textarea></div>
+      <div class="field"><label data-i18n="116">Destination port</label><input type="text" id="q_port" placeholder="e.g. Rotterdam"></div>
+      <div class="field"><label data-i18n="117">Notes</label><textarea rows="2" id="q_notes" placeholder="Spec requirements, Incoterms, timeline…"></textarea></div>
       <div class="err" id="q_err">Please enter your company and a valid business email.</div>
-      <button class="btn btn-gold" id="q_submit" onclick="submitQuote()">Send enquiry →</button>
+      <button class="btn btn-gold" id="q_submit" onclick="submitQuote()" data-i18n="118">Send enquiry →</button>
     </div>
   </div>
 </section>
@@ -747,16 +752,16 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <div class="brand"><svg width="32" height="32" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"/><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"/></svg>SafOil</div>
-        <p>Supplier and exporter of sustainable Used Cooking Oil and waste-oil biofuel feedstock, based in Malaysia. Certified · Traceable · Global.</p>
+        <div class="brand"><svg width="32" height="32" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"></circle><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"></path></svg>SafOil</div>
+        <p data-i18n="119">Supplier and exporter of sustainable Used Cooking Oil and waste-oil biofuel feedstock, based in Malaysia. Certified · Traceable · Global.</p>
       </div>
-      <div class="foot-col"><h4>Products</h4><a href="#products">Used Cooking Oil (UCO)</a><a href="#products">Tallow &amp; Fish Oil</a><a href="#products">PFAD, POME &amp; EFB Oil</a><a href="#products">SBEO &amp; Acid Oils</a></div>
-      <div class="foot-col"><h4>Company</h4><a href="#about">About Us</a><a href="#process">How It Works</a><a href="#markets">Markets</a><a href="#location">Find Us</a><a href="#blog">Insights</a></div>
-      <div class="foot-col"><h4>Contact</h4>
+      <div class="foot-col"><h4 data-i18n="120">Products</h4><a href="#products" data-i18n="121">Used Cooking Oil (UCO)</a><a href="#products" data-i18n="122">Tallow &amp; Fish Oil</a><a href="#products" data-i18n="123">PFAD, POME &amp; EFB Oil</a><a href="#products" data-i18n="124">SBEO &amp; Acid Oils</a></div>
+      <div class="foot-col"><h4 data-i18n="125">Company</h4><a href="#about" data-i18n="126">About Us</a><a href="#process" data-i18n="127">How It Works</a><a href="#markets" data-i18n="128">Markets</a><a href="#location" data-i18n="129">Find Us</a><a href="#blog" data-i18n="130">Insights</a></div>
+      <div class="foot-col"><h4 data-i18n="131">Contact</h4>
         <a href="tel:+60162298119">+60 16-229 8119 (Office)</a>
         <a href="tel:+60183237182">+60 18-323 7182 (Mr Lee, BD)</a>
         <a href="mailto:sales@safoil.my">sales@safoil.my</a>
-        <a href="https://wa.me/60162298119" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://wa.me/60162298119" target="_blank" rel="noopener" data-i18n="135">WhatsApp</a>
         <a href="#location" style="line-height:1.4">Batu Caves, Selangor</a>
       </div>
     </div>
@@ -770,39 +775,39 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
 <!-- COA GATE MODAL -->
 <div class="modal-bg" id="coaModal">
   <div class="modal">
-    <button class="x" onclick="closeCoa()" aria-label="Close">&times;</button>
+    <button class="x" onclick="closeCoa()" aria-label="Close" data-i18n="137">×</button>
 
     <div id="coaForm">
       <div class="mh">
-        <svg width="30" height="30" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"/><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"/></svg>
-        <h3>Sample COA</h3>
+        <svg width="30" height="30" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"></circle><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"></path></svg>
+        <h3 data-i18n="138">Sample COA</h3>
       </div>
-      <p class="msub">Tell us where to send it. We'll email the sample Certificate of Analysis and follow up on your enquiry.</p>
+      <p class="msub" data-i18n="139">Tell us where to send it. We'll email the sample Certificate of Analysis and follow up on your enquiry.</p>
 
       <div class="field">
-        <label>Company name</label>
+        <label data-i18n="140">Company name</label>
         <input type="text" id="f_company" placeholder="Your company">
         <div class="err" id="e_company">Please enter your company name.</div>
       </div>
       <div class="field">
-        <label>Work email</label>
+        <label data-i18n="141">Work email</label>
         <input type="email" id="f_email" placeholder="you@company.com">
         <div class="err" id="e_email">Please use a valid business email (not gmail/yahoo/hotmail).</div>
       </div>
       <div class="field">
-        <label>Target volume (MT / month) — optional</label>
+        <label data-i18n="142">Target volume (MT / month) — optional</label>
         <input type="text" id="f_volume" placeholder="e.g. 200">
       </div>
 
-      <button class="btn btn-gold" id="coaSubmit" onclick="submitCoa()">Email me the sample COA →</button>
-      <p class="priv">We use your details only to send the COA and follow up on your enquiry. No spam.</p>
+      <button class="btn btn-gold" id="coaSubmit" onclick="submitCoa()" data-i18n="143">Email me the sample COA →</button>
+      <p class="priv" data-i18n="144">We use your details only to send the COA and follow up on your enquiry. No spam.</p>
     </div>
 
     <div class="modal-success" id="coaSuccess" style="display:none">
-      <div class="tick"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F1F6F5" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg></div>
-      <h3>Check your inbox</h3>
-      <p>Thanks — the sample COA is on its way to your email, and our trade desk will be in touch shortly.</p>
-      <button class="btn btn-ghost" onclick="closeCoa()">Close</button>
+      <div class="tick"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F1F6F5" stroke-width="2.5"><path d="M5 13l4 4L19 7"></path></svg></div>
+      <h3 data-i18n="145">Check your inbox</h3>
+      <p data-i18n="146">Thanks — the sample COA is on its way to your email, and our trade desk will be in touch shortly.</p>
+      <button class="btn btn-ghost" onclick="closeCoa()" data-i18n="147">Close</button>
     </div>
   </div>
 </div>
@@ -810,13 +815,13 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
 <!-- ARTICLE MODAL -->
 <div class="art-bg" id="artModal">
   <div class="art-modal">
-    <button class="art-x" onclick="closeArticle()" aria-label="Close">&times;</button>
+    <button class="art-x" onclick="closeArticle()" aria-label="Close" data-i18n="148">×</button>
     <div class="art-hero pimg" id="artHero"><span class="acat" id="artCat">Market</span></div>
     <div class="art-body">
       <div class="adate" id="artDate"></div>
       <h2 id="artTitle"></h2>
       <div id="artHtml"></div>
-      <div class="art-foot">Want our latest market notes by email? <a href="mailto:sales@safoil.my?subject=Subscribe%20to%20SafOil%20Insights">Subscribe to SafOil Insights →</a></div>
+      <div class="art-foot">Want our latest market notes by email? <a href="mailto:sales@safoil.my?subject=Subscribe%20to%20SafOil%20Insights" data-i18n="149">Subscribe to SafOil Insights →</a></div>
     </div>
   </div>
 </div>
@@ -1023,5 +1028,49 @@ document.getElementById('artModal')?.addEventListener('click',function(e){if(e.t
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeArticle();});
 </script>
 
-</body>
-</html>
+
+
+<script type="application/json" id="i18n-data">{"zh-CN":{"1":"关于我们","2":"产品","3":"运作流程","4":"市场","5":"联系方式","6":"行业洞察","7":"获取报价","8":"索取价格","9":"将废油转化为世界<span class=\"gd\">更清洁的燃料</span>。","10":"SafOil 在马来西亚采购、供应并出口稳定品质的废弃食用油、牛油、棕榈脂肪酸馏出物（PFAD）、棕榈油厂废水油（POME）及酸化油——为全球生物柴油、可再生柴油及可持续航空燃料生产商提供经过认证、可追溯的原料。","11":"获取出口报价 →","12":"查看规格","13":"专注生物燃料原料的专业供应商。","14":"SafOil 是一家总部位于马来西亚的供应商及出口商，专注为全球生物燃料行业供应废弃及残余油类原料。","15":"我们采购、加工并出口全系列原料——废弃食用油、牛油、鱼油、PFAD、POME、EFB油、废白土油及植物酸化油——为欧洲、北美及亚洲的生物柴油、可再生柴油及可持续航空燃料生产商提供供应。","16":"SafOil 秉持稳定性、合规性与清晰单证三大原则，将严谨的贸易执行与符合ISCC标准的可追溯性相结合，为炼油商提供值得信赖的原料合作伙伴——批批如一。","17":"原料专业知识","18":"深谙废油及酸化油市场、等级标准与全球原料动态。","19":"以客户为中心","20":"根据每位客户的具体数量、规格及物流需求量身定制解决方案。","21":"诚信为本","22":"每一笔交易均秉持诚实与透明——这是长期合作关系的基石。","23":"可靠的供应链","24":"稳固的供应商合作关系及强大的网络，确保稳定优质的供应。","25":"联通供应，成就卓越。","26":"\"我们致力于将可靠的原料供应与全球生物燃料生产商紧密相连——在每一次运输中都坚守品质、可追溯性与诚信。\"","27":"专业团队精通国际贸易、原料采购及全球可再生燃料市场的合规要求。","28":"废弃及残余原料，随时可运。","29":"SafOil 为生物柴油、可再生柴油（HVO）及可持续航空燃料生产商提供全系列废弃及残余油类原料——从废弃食用油、动物脂肪到棕榈残渣及植物酸化油。每批货物在装运前均经过实验室检测，并附有完整的批次分析证书及符合ISCC标准的可追溯性。","30":"废弃食用油（UCO）","31":"经过滤的废弃食用油，可用于生物柴油及油脂化工转化——以具竞争力的FOB价格提供稳定出口量，供应标准级及低游离脂肪酸（FFA）优质等级。","32":"牛油（动物脂肪）","33":"熔炼动物脂肪牛油，可作为生物柴油及可再生柴油原料。这是一种高能量、按类别分级的脂肪原料，适用于FAME及HVO加工工艺。","34":"鱼油","35":"残余及废弃级鱼油，适用于先进生物燃料及油脂化工应用——一种具备优良低温流动性的海洋脂质原料。","36":"棕榈脂肪酸馏出物（PFAD）","37":"棕榈脂肪酸馏出物——一种高游离脂肪酸的棕榈精炼副产品，广泛用作生物柴油及油脂化工原料。品质稳定，可批量出口。","38":"POME油（棕榈油厂废水油）","39":"棕榈油厂废水油——一种从棕榈榨油过程中回收的附件IX先进原料，符合RED II双重计数资格，可用于可再生柴油及可持续航空燃料。","40":"EFB油（空果串油）","41":"空果串油——一种源自棕榈生物质残余的油类原料，适用于先进生物燃料生产，满足低碳强度原料要求。","42":"废白土油（SBEO）","43":"从废白土中回收的油——附件IX A部分的先进残余原料，具有高游离脂肪酸含量，适用于酯化及HVO加工工艺。","44":"大豆酸化油","45":"大豆酸化油——一种高游离脂肪酸的植物油精炼残余物，可作为生物柴油及油脂化工原料，供应稳定的出口货源。","46":"棉籽酸化油","47":"棉籽酸化油——一种植物酸化油残余原料，可用于生物柴油及油脂化工转化，提供长约及现货供应。","48":"米糠酸化油","49":"米糠酸化油——米糠油精炼过程中产生的高游离脂肪酸副产品，可用作生物柴油原料及油脂化工应用，货源稳定，来自亚洲产地。","50":"询价前请先查看我们的规格说明。","51":"下载样本分析证书，了解我们典型UCO等级的各项参数——游离脂肪酸、水分、硫含量及完整质量指标。所示数值仅供参考；每批货物均附有签署的批次分析证书。","52":"下载样本分析证书 →","53":"从供应商到认证货物。","54":"透明的四阶段流程，确保您的原料合规，单证随时可供审核。","55":"采购","56":"原料采购自马来西亚及区域内经过审核的可信供应商及加工商网络。","57":"质量检测","58":"原料在发货前均经过检测，必要时进行加工处理，以达到目标游离脂肪酸及水分等级。","59":"核验","60":"每批货物均提供独立实验室分析证书，并附有完整的监管链及可持续性文件。","61":"出口","62":"以软体罐、ISO罐或散装船只装运——按FOB或CIF条款运抵您指定的港口。","63":"专为不能承担风险的采购团队而设。","64":"炼油商采购时看重三点：稳定性、认证及清晰单证。我们正是围绕这三点而建立。","65":"每批货物品质如一","66":"标准化加工及逐批检测，确保您所签订的规格与实际收到的完全一致——批批如此。","67":"认证就绪的供应","68":"符合ISCC标准及RED II法规的单证，附完整监管链，确保您的原料计入可持续发展目标。","69":"全程门到港服务","70":"软体罐、ISO罐或散装船只，FOB或CIF条款。专属贸易及物流团队全程管理单证与运输事宜。","71":"需求所在，运输所至。","72":"欧洲联盟","73":"受RED II法规驱动，生物柴油及HVO炼油商对废弃原料的需求持续增长。","74":"北美","75":"在LCFS及RFS激励计划下的可再生柴油及可持续航空燃料生产商。","76":"东亚及南亚","77":"寻求稳定、可追溯供应的区域油脂化工及生物燃料买家。","78":"扎根雪兰莪州鹅唛，真实运营。","79":"SafOil 在马来西亚雪兰莪州鹅唛设有商业办公室——让我们的合作伙伴确信这是一家合法、可联系、并在亚洲重要贸易枢纽拥有实体基地的企业。","80":"总部办公室","85":"获取路线 →","86":"WhatsApp 联系我们","87":"来自我们贸易团队的市场情报。","88":"针对我们合作的买家及伙伴撰写的市场评论，涵盖UCO价格、可持续发展法规及可再生原料贸易动态。","89":"2026年UCO价格走势的推动因素","90":"欧盟RED III目标、可持续航空燃料强制令及原料竞争如何重塑废弃油类的需求格局。","91":"阅读文章 →","92":"面向买家详解ISCC认证","93":"监管链文件究竟能证明什么，以及它对您的RED II申报为何至关重要。","94":"阅读文章 →","95":"从供应商到货物：UCO的旅程","96":"深入了解每一批可追溯货物背后的采购、质量控制与出口链条。","97":"阅读文章 →","98":"通过邮件获取我们的市场洞察","99":"订阅我们的邮件列表，不定期获取有关UCO价格及可再生原料法规的资讯。绝无垃圾邮件——只有合作伙伴所看重的贸易情报。","100":"订阅 →","101":"告知您的规格，获取报价。","102":"迅速回应贸易询价","103":"应要求提供FOB及CIF报价","104":"签约前可提供样本分析证书","105":"欢迎洽谈长期承购协议","108":"WhatsApp","109":"索取报价","110":"无任何义务——仅限贸易询价。","111":"公司名称","112":"联系人姓名","113":"商务邮箱","114":"产品","115":"数量（吨/月）","116":"目的港","117":"备注","118":"发送询价 →","119":"总部位于马来西亚的可持续废弃食用油及废油类生物燃料原料供应商与出口商。认证 · 可追溯 · 全球化。","120":"产品","121":"废弃食用油（UCO）","122":"牛油与鱼油","123":"PFAD、POME与EFB油","124":"SBEO与酸化油","125":"公司","126":"关于我们","127":"运作流程","128":"市场","129":"联系方式","130":"行业洞察","131":"联系方式","135":"WhatsApp","137":"×","138":"样本分析证书","139":"告诉我们发送地址，我们将通过邮件发送样本分析证书，并跟进您的询价。","140":"公司名称","141":"工作邮箱","142":"目标数量（吨/月）——选填","143":"通过邮件发送样本分析证书给我 →","144":"我们仅使用您的信息发送分析证书并跟进您的询价，绝不发送垃圾邮件。","145":"请查收您的邮箱","146":"谢谢——样本分析证书正在发送至您的邮箱，我们的贸易团队将很快与您联系。","147":"关闭","148":"×","149":"订阅SafOil行业洞察 →"},"th":{"1":"เกี่ยวกับเรา","2":"ผลิตภัณฑ์","3":"ขั้นตอนการทำงาน","4":"ตลาด","5":"ที่ตั้งของเรา","6":"บทความ","7":"ขอใบเสนอราคา","8":"สอบถามราคา","9":"เปลี่ยนน้ำมันเหลือใช้ให้เป็น<span class=\"gd\">เชื้อเพลิงที่สะอาดกว่า</span>ของโลก","10":"SafOil จัดหา ผลิต และส่งออกน้ำมันปรุงอาหารใช้แล้ว ไขมันสัตว์ PFAD POME และกรดน้ำมันคุณภาพสม่ำเสมอจากมาเลเซีย — วัตถุดิบที่ได้รับการรับรองและตรวจสอบย้อนกลับได้ สำหรับผู้ผลิตไบโอดีเซล ดีเซลหมุนเวียน และเชื้อเพลิงการบินยั่งยืนทั่วโลก","11":"ขอใบเสนอราคาส่งออก →","12":"ดูข้อมูลจำเพาะ","13":"ผู้เชี่ยวชาญด้านวัตถุดิบไบโอฟิวเอลโดยเฉพาะ","14":"SafOil เป็นผู้จัดหาและส่งออกวัตถุดิบน้ำมันเหลือใช้และน้ำมันตกค้าง สำหรับอุตสาหกรรมไบโอฟิวเอลทั่วโลก มีฐานอยู่ในมาเลเซีย","15":"เราจัดหา แปรรูป และส่งออกวัตถุดิบครบวงจร ได้แก่ น้ำมันปรุงอาหารใช้แล้ว ไขมันสัตว์ น้ำมันปลา PFAD POME น้ำมัน EFB น้ำมันดินฟอกสี และกรดน้ำมันพืช เพื่อป้อนให้ผู้ผลิตไบโอดีเซล ดีเซลหมุนเวียน และเชื้อเพลิงการบินยั่งยืนทั่วยุโรป อเมริกาเหนือ และเอเชีย","16":"ด้วยหลักการด้านความสม่ำเสมอ การปฏิบัติตามข้อกำหนด และเอกสารที่ถูกต้องครบถ้วน SafOil ผสานการดำเนินธุรกิจการค้าที่มีวินัยเข้ากับการตรวจสอบย้อนกลับตามมาตรฐาน ISCC เพื่อให้โรงกลั่นได้พันธมิตรด้านวัตถุดิบที่ไว้วางใจได้ในทุกการจัดส่ง","17":"ความเชี่ยวชาญด้านวัตถุดิบ","18":"ความรู้เชิงลึกเกี่ยวกับตลาดน้ำมันเหลือใช้และกรดน้ำมัน เกรดต่างๆ และแนวโน้มวัตถุดิบทั่วโลก","19":"ยึดลูกค้าเป็นศูนย์กลาง","20":"โซลูชันที่ออกแบบเฉพาะตามปริมาณ ข้อกำหนด และความต้องการด้านโลจิสติกส์ของลูกค้าแต่ละราย","21":"ยึดมั่นความซื่อสัตย์เป็นอันดับแรก","22":"ความซื่อสัตย์และความโปร่งใสในทุกการติดต่อ — รากฐานของความร่วมมือระยะยาว","23":"ห่วงโซ่อุปทานที่เชื่อถือได้","24":"ความร่วมมือที่แข็งแกร่งกับซัพพลายเออร์และเครือข่ายที่มั่นคง เพื่อการจัดหาที่สม่ำเสมอและมีคุณภาพ","25":"เชื่อมโยงอุปทาน ส่งมอบความเป็นเลิศ","26":"\"เรามุ่งมั่นเชื่อมโยงแหล่งวัตถุดิบที่เชื่อถือได้เข้ากับผู้ผลิตไบโอฟิวเอลทั่วโลก พร้อมส่งมอบคุณภาพ การตรวจสอบย้อนกลับ และความซื่อสัตย์ในทุกการจัดส่ง\"","27":"ทีมงานผู้เชี่ยวชาญด้านการค้าระหว่างประเทศ การจัดหาวัตถุดิบ และข้อกำหนดด้านการปฏิบัติตามกฎระเบียบของตลาดพลังงานหมุนเวียนทั่วโลก","28":"วัตถุดิบจากของเหลือใช้และกากตะกอน พร้อมส่งออก","29":"SafOil จัดหาวัตถุดิบน้ำมันเหลือใช้และน้ำมันตกค้างครบวงจร สำหรับผู้ผลิตไบโอดีเซล ดีเซลหมุนเวียน (HVO) และเชื้อเพลิงการบินยั่งยืน ตั้งแต่น้ำมันปรุงอาหารใช้แล้วและไขมันสัตว์ ไปจนถึงกากปาล์มและกรดน้ำมันพืช ทุกล็อตสินค้าผ่านการตรวจสอบในห้องปฏิบัติการก่อนบรรจุ พร้อมใบรับรองผลวิเคราะห์และการตรวจสอบย้อนกลับตามมาตรฐาน ISCC","30":"น้ำมันปรุงอาหารใช้แล้ว (UCO)","31":"น้ำมันปรุงอาหารใช้แล้วที่ผ่านการกรอง สำหรับไบโอดีเซลและการแปรรูปโอลีโอเคมี — ปริมาณส่งออกที่เชื่อถือได้ในราคา FOB ที่แข่งขันได้ มีทั้งเกรดมาตรฐานและเกรดพรีเมียม FFA ต่ำ","32":"ไขมันสัตว์ (Tallow)","33":"ไขมันสัตว์ที่ผ่านการหลอมละลาย สำหรับใช้เป็นวัตถุดิบไบโอดีเซลและดีเซลหมุนเวียน เป็นวัตถุดิบไขมันพลังงานสูงที่จัดแบ่งตามประเภท เหมาะสำหรับกระบวนการ FAME และ HVO","34":"น้ำมันปลา","35":"น้ำมันปลาเกรดตกค้างและเหลือใช้ สำหรับไบโอฟิวเอลขั้นสูงและการใช้งานโอลีโอเคมี — วัตถุดิบไขมันจากทะเลที่มีคุณสมบัติการไหลตัวในอุณหภูมิต่ำที่ดีเยี่ยม","36":"PFAD","37":"กรดไขมันปาล์มกลั่น (PFAD) — ผลพลอยได้จากการกลั่นปาล์มที่มี FFA สูง นิยมใช้เป็นวัตถุดิบไบโอดีเซลและโอลีโอเคมี คุณภาพสม่ำเสมอ ปริมาณส่งออกจำนวนมาก","38":"น้ำมัน POME","39":"น้ำมันจากน้ำเสียโรงงานสกัดน้ำมันปาล์ม (POME) — วัตถุดิบขั้นสูงตาม Annex IX ที่ได้จากกระบวนการสกัดปาล์ม มีสิทธิ์นับซ้ำ (double-counting) ภายใต้ RED II สำหรับดีเซลหมุนเวียนและเชื้อเพลิงการบินยั่งยืน","40":"น้ำมัน EFB","41":"น้ำมันจากทะลายปาล์มเปล่า (EFB) — วัตถุดิบน้ำมันจากชีวมวลปาล์มตกค้าง สำหรับการผลิตไบโอฟิวเอลขั้นสูง รองรับข้อกำหนดวัตถุดิบที่มีความเข้มข้นคาร์บอนต่ำ","42":"น้ำมันดินฟอกสีใช้แล้ว (SBEO)","43":"น้ำมันที่กู้คืนจากดินฟอกสีใช้แล้ว — วัตถุดิบตกค้างขั้นสูงตาม Annex IX ส่วน A มี FFA สูง เหมาะสำหรับกระบวนการเอสเทอริฟิเคชันและ HVO","44":"กรดน้ำมันถั่วเหลือง","45":"กรดน้ำมันถั่วเหลือง — กากตกค้างจากการกลั่นน้ำมันพืชที่มี FFA สูง ใช้เป็นวัตถุดิบไบโอดีเซลและโอลีโอเคมี จัดหาเพื่อการส่งออกที่สม่ำเสมอ","46":"กรดน้ำมันเมล็ดฝ้าย","47":"กรดน้ำมันเมล็ดฝ้าย — วัตถุดิบกรดน้ำมันพืชตกค้าง สำหรับไบโอดีเซลและการแปรรูปโอลีโอเคมี พร้อมจำหน่ายทั้งแบบสัญญาระยะยาวและสปอต","48":"กรดน้ำมันรำข้าว","49":"กรดน้ำมันรำข้าว — ผลพลอยได้ที่มี FFA สูงจากการกลั่นน้ำมันรำข้าว ใช้เป็นวัตถุดิบไบโอดีเซลและในงานโอลีโอเคมี ปริมาณสม่ำเสมอจากแหล่งในเอเชีย","50":"ดูข้อมูลจำเพาะของเราก่อนสอบถาม","51":"ดาวน์โหลดตัวอย่างใบรับรองผลวิเคราะห์ (COA) แสดงเกรด UCO มาตรฐานของเรา — FFA ความชื้น กำมะถัน และพารามิเตอร์คุณภาพครบถ้วน เป็นค่าตัวอย่างเท่านั้น โดยจะออก COA ที่ลงนามจริงให้ทุกล็อตสินค้า","52":"ดาวน์โหลดตัวอย่าง COA →","53":"จากซัพพลายเออร์สู่สินค้าที่ได้รับการรับรอง","54":"กระบวนการสี่ขั้นตอนที่โปร่งใส ทำให้วัตถุดิบของคุณเป็นไปตามข้อกำหนดและเอกสารพร้อมสำหรับการตรวจสอบเสมอ","55":"จัดหา","56":"วัตถุดิบจัดหาจากเครือข่ายซัพพลายเออร์และผู้แปรรูปที่ผ่านการตรวจสอบทั่วมาเลเซียและภูมิภาค","57":"ตรวจสอบคุณภาพ","58":"วัตถุดิบจะถูกตรวจสอบและแปรรูปตามความจำเป็นก่อนจัดส่ง เพื่อให้ได้เกรด FFA และความชื้นตามเป้าหมาย","59":"ยืนยันผล","60":"ใบรับรองผลวิเคราะห์จากห้องปฏิบัติการอิสระในทุกล็อต พร้อมเอกสารห่วงโซ่การควบคุมและความยั่งยืนครบถ้วน","61":"ส่งออก","62":"บรรจุในเฟล็กซิแท็งก์ ถังไอเอสโอ หรือเรือขนส่งสินค้าเทกอง — ส่งมอบแบบ FOB หรือ CIF ไปยังท่าเรือที่คุณเลือก","63":"ออกแบบมาเพื่อทีมจัดซื้อที่ไม่สามารถรับความเสี่ยงได้","64":"โรงกลั่นเลือกซื้อจากสามปัจจัย ได้แก่ ความสม่ำเสมอ การรับรอง และเอกสารที่ถูกต้อง เราสร้างขึ้นโดยยึดทั้งสามข้อนี้เป็นหลัก","65":"เกรดที่เชื่อถือได้ในทุกล็อต","66":"กระบวนการที่ได้มาตรฐานและการตรวจสอบทุกล็อต หมายความว่าสเปกที่คุณทำสัญญาไว้คือสเปกที่คุณจะได้รับ ในทุกการจัดส่ง","67":"อุปทานพร้อมสำหรับการรับรอง","68":"เอกสารที่สอดคล้องกับ ISCC และเป็นไปตาม RED II พร้อมห่วงโซ่การควบคุมครบถ้วน เพื่อให้วัตถุดิบของคุณนับรวมในเป้าหมายความยั่งยืน","69":"ดูแลตั้งแต่ต้นทางถึงท่าเรือ","70":"เฟล็กซิแท็งก์ ถังไอเอสโอ หรือเรือขนส่งเทกอง แบบ FOB หรือ CIF ทีมการค้าและโลจิสติกส์เฉพาะทางดูแลเอกสารและการขนส่งตั้งแต่ต้นจนจบ","71":"เราส่งสินค้าไปในที่ที่มีความต้องการ","72":"สหภาพยุโรป","73":"ความต้องการที่ขับเคลื่อนโดย RED II จากโรงกลั่นไบโอดีเซลและ HVO ที่ต้องการวัตถุดิบจากของเหลือใช้","74":"อเมริกาเหนือ","75":"ผู้ผลิตดีเซลหมุนเวียนและเชื้อเพลิงการบินยั่งยืนภายใต้โครงการ LCFS และ RFS","76":"เอเชียตะวันออกและใต้","77":"ผู้ซื้อโอลีโอเคมีและไบโอฟิวเอลในภูมิภาคที่ต้องการอุปทานที่สม่ำเสมอและตรวจสอบย้อนกลับได้","78":"มีที่ตั้งจริงในบาตูเคฟส์ สลังงอร์","79":"SafOil ดำเนินงานจากสำนักงานเชิงพาณิชย์ในบาตูเคฟส์ สลังงอร์ ประเทศมาเลเซีย — สร้างความมั่นใจให้พันธมิตรของเราว่าเป็นธุรกิจที่ถูกกฎหมาย ติดต่อได้ และมีฐานที่ตั้งจริงในหนึ่งในศูนย์กลางการค้าสำคัญของเอเชีย","80":"สำนักงานใหญ่","85":"ดูเส้นทาง →","86":"ติดต่อเราทาง WhatsApp","87":"ข้อมูลเชิงลึกด้านตลาดจากทีมการค้าของเรา","88":"บทวิเคราะห์ตลาดเกี่ยวกับราคา UCO กฎระเบียบด้านความยั่งยืน และการค้าวัตถุดิบหมุนเวียน — เขียนขึ้นสำหรับผู้ซื้อและพันธมิตรที่เราทำงานด้วย","89":"ปัจจัยที่ขับเคลื่อนราคาน้ำมัน UCO สู่ปี 2026","90":"เป้าหมาย RED III ของสหภาพยุโรป ข้อบังคับเชื้อเพลิงการบินยั่งยืน และการแข่งขันด้านวัตถุดิบกำลังเปลี่ยนโฉมความต้องการน้ำมันจากของเหลือใช้อย่างไร","91":"อ่านบทความ →","92":"อธิบายการรับรอง ISCC สำหรับผู้ซื้อ","93":"เอกสารห่วงโซ่การควบคุมพิสูจน์อะไรได้บ้าง และเหตุใดจึงสำคัญต่อการรายงาน RED II ของคุณ","94":"อ่านบทความ →","95":"จากซัพพลายเออร์สู่สินค้า: เส้นทางของ UCO","96":"เจาะลึกกระบวนการจัดหา ควบคุมคุณภาพ และการส่งออกเบื้องหลังการจัดส่งที่ตรวจสอบย้อนกลับได้ทุกครั้ง","97":"อ่านบทความ →","98":"รับข้อมูลเชิงลึกด้านตลาดทางอีเมล","99":"สมัครรับรายชื่ออีเมลของเราเพื่อรับข้อมูลเป็นครั้งคราวเกี่ยวกับราคา UCO และกฎระเบียบวัตถุดิบหมุนเวียน ไม่มีสแปม — มีเพียงข้อมูลเชิงลึกด้านการค้าที่พันธมิตรของเราให้คุณค่า","100":"สมัครสมาชิก →","101":"บอกสเปกของคุณ รับใบเสนอราคา","102":"ตอบกลับคำสอบถามการค้าอย่างรวดเร็ว","103":"เสนอราคา FOB และ CIF ตามคำขอ","104":"มีตัวอย่าง COA ให้ก่อนทำสัญญา","105":"ยินดีรับข้อตกลงรับซื้อระยะยาว","108":"WhatsApp","109":"ขอใบเสนอราคา","110":"ไม่มีข้อผูกมัด — สำหรับการสอบถามด้านการค้าเท่านั้น","111":"ชื่อบริษัท","112":"ชื่อผู้ติดต่อ","113":"อีเมลธุรกิจ","114":"ผลิตภัณฑ์","115":"ปริมาณ (เมตริกตัน/เดือน)","116":"ท่าเรือปลายทาง","117":"หมายเหตุ","118":"ส่งคำสอบถาม →","119":"ผู้จัดหาและส่งออกน้ำมันปรุงอาหารใช้แล้วและวัตถุดิบไบโอฟิวเอลจากน้ำมันเหลือใช้อย่างยั่งยืน มีฐานอยู่ในมาเลเซีย ได้รับการรับรอง · ตรวจสอบย้อนกลับได้ · ระดับโลก","120":"ผลิตภัณฑ์","121":"น้ำมันปรุงอาหารใช้แล้ว (UCO)","122":"ไขมันสัตว์และน้ำมันปลา","123":"PFAD, POME และน้ำมัน EFB","124":"SBEO และกรดน้ำมัน","125":"บริษัท","126":"เกี่ยวกับเรา","127":"ขั้นตอนการทำงาน","128":"ตลาด","129":"ที่ตั้งของเรา","130":"บทความ","131":"ติดต่อ","135":"WhatsApp","137":"×","138":"ตัวอย่าง COA","139":"แจ้งให้เราทราบว่าจะส่งไปที่ไหน เราจะอีเมลตัวอย่างใบรับรองผลวิเคราะห์และติดตามคำสอบถามของคุณ","140":"ชื่อบริษัท","141":"อีเมลที่ทำงาน","142":"ปริมาณเป้าหมาย (เมตริกตัน/เดือน) — ไม่บังคับ","143":"ส่งตัวอย่าง COA ให้ฉันทางอีเมล →","144":"เราใช้ข้อมูลของคุณเพื่อส่ง COA และติดตามคำสอบถามของคุณเท่านั้น ไม่มีสแปม","145":"ตรวจสอบกล่องข้อความของคุณ","146":"ขอบคุณ — ตัวอย่าง COA กำลังถูกส่งไปยังอีเมลของคุณ และทีมการค้าของเราจะติดต่อกลับในไม่ช้า","147":"ปิด","148":"×","149":"สมัครรับข้อมูลเชิงลึกจาก SafOil →"},"vi":{"1":"Giới thiệu","2":"Sản phẩm","3":"Quy trình","4":"Thị trường","5":"Liên hệ","6":"Tin tức","7":"Nhận báo giá","8":"Yêu cầu báo giá","9":"Biến dầu thải thành <span class=\"gd\">nhiên liệu sạch hơn</span> cho thế giới.","10":"SafOil thu mua, cung ứng và xuất khẩu dầu ăn đã qua sử dụng, mỡ động vật, PFAD, POME và dầu axit đạt chuẩn ổn định từ Malaysia — nguyên liệu được chứng nhận, có thể truy xuất nguồn gốc dành cho các nhà sản xuất diesel sinh học, diesel tái tạo và nhiên liệu hàng không bền vững trên toàn thế giới.","11":"Nhận báo giá xuất khẩu →","12":"Xem thông số kỹ thuật","13":"Chuyên gia nguyên liệu nhiên liệu sinh học chuyên biệt.","14":"SafOil là nhà cung cấp và xuất khẩu nguyên liệu dầu thải và dầu tồn dư có trụ sở tại Malaysia, phục vụ ngành công nghiệp nhiên liệu sinh học toàn cầu.","15":"Chúng tôi thu mua, xử lý và xuất khẩu đầy đủ các loại nguyên liệu — dầu ăn đã qua sử dụng, mỡ động vật, dầu cá, PFAD, POME, dầu EFB, dầu đất tẩy trắng đã qua sử dụng và dầu axit thực vật — cung ứng cho các nhà sản xuất diesel sinh học, diesel tái tạo và nhiên liệu hàng không bền vững trên khắp châu Âu, Bắc Mỹ và châu Á.","16":"Được xây dựng dựa trên nguyên tắc ổn định, tuân thủ và hồ sơ tài liệu minh bạch, SafOil kết hợp việc thực hiện giao dịch có kỷ luật với khả năng truy xuất nguồn gốc phù hợp tiêu chuẩn ISCC, mang lại cho các nhà máy lọc dầu một đối tác nguyên liệu đáng tin cậy — từ lô hàng này đến lô hàng khác.","17":"Chuyên môn về nguyên liệu","18":"Am hiểu sâu sắc về thị trường dầu thải và dầu axit, các cấp độ và động thái nguyên liệu toàn cầu.","19":"Lấy khách hàng làm trung tâm","20":"Giải pháp được thiết kế riêng theo khối lượng, thông số kỹ thuật và nhu cầu logistics cụ thể của từng khách hàng.","21":"Đặt chính trực lên hàng đầu","22":"Trung thực và minh bạch trong mọi giao dịch — nền tảng của các mối quan hệ hợp tác lâu dài.","23":"Chuỗi cung ứng đáng tin cậy","24":"Quan hệ đối tác vững chắc với nhà cung cấp và mạng lưới mạnh mẽ đảm bảo nguồn cung ổn định, chất lượng.","25":"Kết nối nguồn cung, mang lại sự xuất sắc.","26":"\"Chúng tôi cam kết kết nối nguồn cung nguyên liệu đáng tin cậy với các nhà sản xuất nhiên liệu sinh học trên toàn thế giới — mang lại chất lượng, khả năng truy xuất nguồn gốc và sự chính trực trong từng lô hàng.\"","27":"Đội ngũ chuyên môn với kinh nghiệm về thương mại quốc tế, thu mua nguyên liệu và các yêu cầu tuân thủ của thị trường nhiên liệu tái tạo toàn cầu.","28":"Nguyên liệu từ chất thải và phụ phẩm, sẵn sàng xuất khẩu.","29":"SafOil cung cấp đầy đủ các loại nguyên liệu dầu thải và dầu tồn dư cho các nhà sản xuất diesel sinh học, diesel tái tạo (HVO) và nhiên liệu hàng không bền vững — từ dầu ăn đã qua sử dụng, mỡ động vật đến phụ phẩm cọ dầu và dầu axit thực vật. Mỗi lô hàng đều được kiểm nghiệm trong phòng thí nghiệm trước khi bốc hàng, kèm giấy chứng nhận phân tích đầy đủ cho từng lô và khả năng truy xuất nguồn gốc phù hợp ISCC.","30":"Dầu ăn đã qua sử dụng (UCO)","31":"Dầu ăn đã qua sử dụng được lọc, dùng cho diesel sinh học và chuyển đổi oleochemical — khối lượng xuất khẩu ổn định với giá FOB cạnh tranh. Có sẵn cấp tiêu chuẩn và cấp cao cấp FFA thấp.","32":"Mỡ động vật (Tallow)","33":"Mỡ động vật đã qua chế biến, dùng làm nguyên liệu diesel sinh học và diesel tái tạo. Đây là nguồn mỡ năng lượng cao, được phân loại theo hạng mục, phù hợp cho quy trình FAME và HVO.","34":"Dầu cá","35":"Dầu cá tồn dư và cấp thải, dùng cho các ứng dụng nhiên liệu sinh học tiên tiến và oleochemical — nguyên liệu lipid biển với đặc tính chịu lạnh tốt.","36":"PFAD","37":"Palm Fatty Acid Distillate (PFAD) — phụ phẩm tinh luyện cọ dầu có hàm lượng FFA cao, được sử dụng rộng rãi làm nguyên liệu diesel sinh học và oleochemical. Chất lượng ổn định, khối lượng xuất khẩu lớn.","38":"Dầu POME","39":"Dầu từ nước thải nhà máy ép dầu cọ (POME) — nguyên liệu tiên tiến theo Phụ lục IX, được thu hồi từ quá trình ép dầu cọ. Đủ điều kiện tính gấp đôi (double-counting) theo RED II cho diesel tái tạo và nhiên liệu hàng không bền vững.","40":"Dầu EFB","41":"Dầu từ buồng quả cọ rỗng (EFB) — nguồn dầu sinh khối cọ tồn dư cho sản xuất nhiên liệu sinh học tiên tiến, đáp ứng yêu cầu nguyên liệu có cường độ carbon thấp.","42":"Dầu đất tẩy trắng đã qua sử dụng (SBEO)","43":"Dầu thu hồi từ đất tẩy trắng đã qua sử dụng — nguyên liệu tồn dư tiên tiến theo Phụ lục IX Phần A. Nguồn FFA cao cho quy trình ester hóa và HVO.","44":"Dầu axit đậu nành","45":"Dầu axit đậu nành — phụ phẩm tinh luyện dầu thực vật có hàm lượng FFA cao, dùng làm nguyên liệu diesel sinh học và oleochemical, được thu mua để cung ứng xuất khẩu ổn định.","46":"Dầu axit hạt bông","47":"Dầu axit hạt bông — nguồn dầu axit thực vật tồn dư, dùng cho diesel sinh học và chuyển đổi oleochemical, có sẵn cho hợp đồng dài hạn và giao ngay.","48":"Dầu axit cám gạo","49":"Dầu axit cám gạo — phụ phẩm có hàm lượng FFA cao từ quá trình tinh luyện dầu cám gạo, dùng làm nguyên liệu diesel sinh học và trong các ứng dụng oleochemical. Khối lượng ổn định từ các nguồn châu Á.","50":"Xem thông số kỹ thuật của chúng tôi trước khi liên hệ.","51":"Tải xuống mẫu Giấy chứng nhận phân tích thể hiện cấp UCO tiêu chuẩn của chúng tôi — FFA, độ ẩm, lưu huỳnh và các thông số chất lượng đầy đủ. Đây là giá trị tham khảo; giấy COA có chữ ký sẽ được cấp cho từng lô hàng.","52":"Tải mẫu COA →","53":"Từ nhà cung cấp đến hàng hóa được chứng nhận.","54":"Một chuỗi bốn giai đoạn minh bạch, giúp nguyên liệu của bạn luôn tuân thủ và hồ sơ tài liệu sẵn sàng cho kiểm toán.","55":"Thu mua","56":"Nguyên liệu được thu mua từ mạng lưới nhà cung cấp và đơn vị chế biến đáng tin cậy, đã qua thẩm định trên khắp Malaysia và khu vực.","57":"Kiểm tra chất lượng","58":"Nguyên liệu được kiểm tra và, khi cần thiết, xử lý để đạt cấp FFA và độ ẩm mục tiêu trước khi xuất hàng.","59":"Xác minh","60":"Giấy chứng nhận phân tích từ phòng thí nghiệm độc lập cho từng lô, kèm đầy đủ hồ sơ chuỗi hành trình sản phẩm và tài liệu bền vững.","61":"Xuất khẩu","62":"Được bốc lên bồn mềm (flexitank), bồn ISO hoặc tàu chở hàng rời — theo điều kiện FOB hoặc CIF đến cảng bạn chọn.","63":"Được xây dựng cho các đội ngũ thu mua không thể chấp nhận rủi ro.","64":"Các nhà máy lọc dầu mua hàng dựa trên ba yếu tố: tính ổn định, chứng nhận và hồ sơ tài liệu rõ ràng. Chúng tôi được xây dựng xoay quanh cả ba yếu tố này.","65":"Cấp độ đáng tin cậy, ở mọi lô hàng","66":"Quy trình tiêu chuẩn hóa và kiểm nghiệm từng lô đảm bảo thông số bạn ký hợp đồng chính là thông số bạn nhận được — trong mọi lô hàng.","67":"Nguồn cung sẵn sàng chứng nhận","68":"Hồ sơ tài liệu phù hợp ISCC, tuân thủ RED II với đầy đủ chuỗi hành trình sản phẩm, giúp nguyên liệu của bạn được tính vào mục tiêu phát triển bền vững.","69":"Xử lý trọn gói từ kho đến cảng","70":"Bồn mềm (flexitank), bồn ISO hoặc tàu chở hàng rời, FOB hoặc CIF. Bộ phận thương mại và logistics chuyên trách quản lý hồ sơ tài liệu và vận chuyển từ đầu đến cuối.","71":"Chúng tôi vận chuyển đến nơi có nhu cầu.","72":"Liên minh châu Âu","73":"Nhu cầu được thúc đẩy bởi RED II từ các nhà máy lọc diesel sinh học và HVO đang tìm kiếm nguyên liệu từ chất thải.","74":"Bắc Mỹ","75":"Các nhà sản xuất diesel tái tạo và nhiên liệu hàng không bền vững theo các chương trình ưu đãi LCFS và RFS.","76":"Đông Á và Nam Á","77":"Người mua oleochemical và nhiên liệu sinh học trong khu vực đang tìm kiếm nguồn cung ổn định, có thể truy xuất nguồn gốc.","78":"Hiện diện thực sự tại Batu Caves, Selangor.","79":"SafOil hoạt động từ văn phòng thương mại tại Batu Caves, Selangor, Malaysia — mang lại cho đối tác của chúng tôi sự đảm bảo về một doanh nghiệp hợp pháp, có thể liên hệ, với trụ sở thực tế tại một trong những trung tâm thương mại quan trọng của châu Á.","80":"Trụ sở chính","85":"Chỉ đường →","86":"Nhắn tin qua WhatsApp","87":"Thông tin thị trường từ bộ phận giao dịch của chúng tôi.","88":"Bình luận thị trường về giá UCO, quy định về phát triển bền vững và thương mại nguyên liệu tái tạo — được viết dành cho người mua và đối tác mà chúng tôi hợp tác.","89":"Điều gì đang chi phối giá UCO đến năm 2026","90":"Các mục tiêu RED III của EU, quy định bắt buộc về SAF và cạnh tranh nguyên liệu đang định hình lại nhu cầu đối với dầu từ chất thải như thế nào.","91":"Đọc bài viết →","92":"Chứng nhận ISCC, giải thích cho người mua","93":"Hồ sơ chuỗi hành trình sản phẩm thực sự chứng minh điều gì, và tại sao nó quan trọng đối với báo cáo RED II của bạn.","94":"Đọc bài viết →","95":"Từ nhà cung cấp đến hàng hóa: hành trình của UCO","96":"Cái nhìn sâu về chuỗi thu mua, kiểm soát chất lượng và xuất khẩu đằng sau mỗi lô hàng có thể truy xuất nguồn gốc.","97":"Đọc bài viết →","98":"Nhận thông tin thị trường của chúng tôi qua email","99":"Đăng ký danh sách của chúng tôi để nhận thông tin định kỳ về giá UCO và quy định nguyên liệu tái tạo. Không spam — chỉ có thông tin thương mại mà đối tác của chúng tôi đánh giá cao.","100":"Đăng ký →","101":"Cho chúng tôi biết thông số của bạn. Nhận báo giá.","102":"Phản hồi nhanh chóng các yêu cầu giao dịch","103":"Báo giá FOB & CIF theo yêu cầu","104":"Có mẫu COA trước khi ký hợp đồng","105":"Hoan nghênh các thỏa thuận bao tiêu dài hạn","108":"WhatsApp","109":"Yêu cầu báo giá","110":"Không ràng buộc — chỉ dành cho yêu cầu giao dịch.","111":"Tên công ty","112":"Tên người liên hệ","113":"Email công việc","114":"Sản phẩm","115":"Khối lượng (tấn/tháng)","116":"Cảng đến","117":"Ghi chú","118":"Gửi yêu cầu →","119":"Nhà cung cấp và xuất khẩu dầu ăn đã qua sử dụng và nguyên liệu nhiên liệu sinh học từ dầu thải bền vững, có trụ sở tại Malaysia. Được chứng nhận · Có thể truy xuất nguồn gốc · Toàn cầu.","120":"Sản phẩm","121":"Dầu ăn đã qua sử dụng (UCO)","122":"Mỡ động vật & Dầu cá","123":"PFAD, POME & Dầu EFB","124":"SBEO & Dầu axit","125":"Công ty","126":"Về chúng tôi","127":"Quy trình","128":"Thị trường","129":"Liên hệ","130":"Tin tức","131":"Liên hệ","135":"WhatsApp","137":"×","138":"Mẫu COA","139":"Cho chúng tôi biết nơi gửi. Chúng tôi sẽ email mẫu Giấy chứng nhận phân tích và theo dõi yêu cầu của bạn.","140":"Tên công ty","141":"Email công việc","142":"Khối lượng mục tiêu (tấn/tháng) — không bắt buộc","143":"Gửi email mẫu COA cho tôi →","144":"Chúng tôi chỉ sử dụng thông tin của bạn để gửi COA và theo dõi yêu cầu của bạn. Không spam.","145":"Kiểm tra hộp thư của bạn","146":"Cảm ơn — mẫu COA đang được gửi đến email của bạn, và bộ phận giao dịch của chúng tôi sẽ liên hệ sớm.","147":"Đóng","148":"×","149":"Đăng ký nhận thông tin từ SafOil →"},"ja":{"1":"会社概要","2":"製品","3":"取引の流れ","4":"市場","5":"アクセス","6":"インサイト","7":"見積もり依頼","8":"価格を問い合わせる","9":"廃食用油を世界の<span class=\"gd\">よりクリーンな燃料</span>へ。","10":"SafOilはマレーシアから安定した品質の廃食用油、牛脂、PFAD、POME、酸化油を調達・供給・輸出しています——バイオディーゼル、再生可能ディーゼル、SAF（持続可能な航空燃料）メーカー向けに、認証済みでトレーサブルな原料を世界中に提供します。","11":"輸出見積もりを依頼する →","12":"仕様を見る","13":"バイオ燃料原料に特化した専門サプライヤー。","14":"SafOilはマレーシアを拠点とする、世界のバイオ燃料産業向けの廃棄物系・残渣系オイル原料のサプライヤー・輸出業者です。","15":"当社は、廃食用油、牛脂、魚油、PFAD、POME、EFBオイル、廃白土油、植物性酸化油まで、幅広い原料を調達・加工・輸出し、欧州、北米、アジア全域のバイオディーゼル、再生可能ディーゼル、持続可能な航空燃料メーカーに供給しています。","16":"一貫性、コンプライアンス、明確な書類作成という原則のもとに構築されたSafOilは、規律ある取引執行とISCC準拠のトレーサビリティを組み合わせ、精製業者にとって信頼できる原料パートナーを——出荷のたびに——提供します。","17":"原料に関する専門知識","18":"廃油・酸化油市場、グレード、世界の原料動向に関する深い知見。","19":"顧客第一主義","20":"各顧客固有の数量、仕様、物流ニーズに合わせたソリューションを提供します。","21":"誠実さを第一に","22":"あらゆる取引における誠実さと透明性——長期的なパートナーシップの基盤です。","23":"信頼できるサプライチェーン","24":"強固なサプライヤーとの関係と堅牢なネットワークにより、安定した高品質な供給を実現します。","25":"供給をつなぎ、卓越性を届ける。","26":"「私たちは、信頼できる原料供給を世界のバイオ燃料メーカーと結びつけることに尽力しています——すべての出荷において品質、トレーサビリティ、誠実さをお届けします。」","27":"国際貿易、原料調達、そして世界の再生可能燃料市場のコンプライアンス要件に精通した専門チーム。","28":"廃棄物・残渣系原料、いつでも出荷可能。","29":"SafOilは、バイオディーゼル、再生可能ディーゼル（HVO）、SAFメーカー向けに、廃食用油や動物性脂肪からパーム残渣、植物性酸化油まで、幅広い廃棄物系・残渣系オイル原料を供給しています。すべての貨物は積込前にラボ検査を実施し、バッチごとの分析証明書とISCC準拠のトレーサビリティを提供します。","30":"廃食用油（UCO）","31":"バイオディーゼルおよびオレオケミカル変換用にろ過された廃食用油——競争力のあるFOB価格で安定した輸出量を提供します。標準グレードおよび低FFAプレミアムグレードをご用意しています。","32":"牛脂（動物性脂肪）","33":"バイオディーゼルおよび再生可能ディーゼル原料用に精製された動物性脂肪の牛脂。高エネルギーでカテゴリー別に格付けされた脂肪原料で、FAMEおよびHVO処理工程に適しています。","34":"魚油","35":"先進的なバイオ燃料およびオレオケミカル用途向けの残渣・廃棄グレードの魚油——優れた低温流動特性を持つ海洋性脂質原料です。","36":"PFAD（パーム脂肪酸ディスティレート）","37":"パーム脂肪酸ディスティレート——高FFAのパーム精製副産物で、バイオディーゼルおよびオレオケミカル原料として広く利用されています。安定した品質と大量輸出に対応。","38":"POMEオイル","39":"パーム油工場排水由来のPOMEオイル——パーム搾油から回収されるアネックスIXの先進原料です。RED IIのもとで再生可能ディーゼルおよびSAF向けにダブルカウントの対象となります。","40":"EFBオイル","41":"空果房（EFB）オイル——先進的なバイオ燃料生産向けのパームバイオマス残渣オイルで、低炭素強度原料要件に対応します。","42":"廃白土油（SBEO）","43":"使用済み漂白土から回収されたオイル——アネックスIXパートAの先進残渣原料です。高FFAのため、エステル化およびHVO処理工程に適しています。","44":"大豆酸化油","45":"大豆酸化油——高FFAの植物油精製残渣で、バイオディーゼルおよびオレオケミカル原料として、安定した輸出供給のために調達されています。","46":"綿実酸化油","47":"綿実酸化油——植物性酸化油の残渣原料で、バイオディーゼルおよびオレオケミカル変換向けに、契約及びスポット供給が可能です。","48":"米ぬか酸化油","49":"米ぬか酸化油——米ぬか油精製時に生じる高FFAの副産物で、バイオディーゼル原料およびオレオケミカル用途に使用されます。アジアの供給元から安定した数量を確保しています。","50":"お問い合わせ前に仕様をご確認ください。","51":"当社の標準的なUCOグレードを示すサンプル分析証明書をダウンロードいただけます——FFA、水分、硫黄分など品質パラメータを網羅。参考値であり、署名済みのバッチCOAは出荷ごとに発行されます。","52":"サンプルCOAをダウンロード →","53":"サプライヤーから認証済み貨物へ。","54":"原料のコンプライアンスと監査対応可能な書類を維持する、透明性のある4段階のプロセスです。","55":"調達","56":"原料は、マレーシア国内および地域全体で審査済みの信頼できるサプライヤー・加工業者ネットワークから調達されます。","57":"品質検査","58":"原料は出荷前に検査され、必要に応じて目標のFFAおよび水分グレードを満たすよう処理されます。","59":"検証","60":"バッチごとに独立系ラボの分析証明書を発行し、完全なチェーン・オブ・カストディおよび持続可能性関連書類を提供します。","61":"輸出","62":"フレキシタンク、ISOタンク、またはばら積み船に積み込み——お客様が指定する港へFOBまたはCIFでお届けします。","63":"リスクを取れない調達チームのために設計されています。","64":"精製業者が重視するのは、一貫性、認証、そして明確な書類の3点です。当社はこの3点を中心に構築されています。","65":"すべてのバッチで信頼できるグレード","66":"標準化された処理とバッチごとの検査により、契約した仕様がそのまま届く仕様となることを、出荷のたびに保証します。","67":"認証対応済みの供給","68":"ISCC準拠、RED II準拠の書類とチェーン・オブ・カストディを完備し、お客様の原料が持続可能性目標に算入されるようにします。","69":"ドア・ツー・ポートで対応","70":"フレキシタンク、ISOタンク、またはばら積み船、FOBまたはCIF。専任の貿易・物流デスクが書類作成から輸送までを一貫して管理します。","71":"需要のある場所へ出荷します。","72":"欧州連合","73":"廃棄物系原料を求めるバイオディーゼルおよびHVO精製業者による、RED IIに牽引された需要。","74":"北米","75":"LCFSおよびRFSのインセンティブプログラムのもとにある再生可能ディーゼルおよびSAFメーカー。","76":"東アジア・南アジア","77":"安定してトレーサブルな供給を求める地域のオレオケミカルおよびバイオ燃料バイヤー。","78":"セランゴール州バトゥ・ケイブスに実在する拠点。","79":"SafOilはマレーシア・セランゴール州バトゥ・ケイブスの商業オフィスから事業を運営しており、アジアの主要な貿易拠点のひとつに実際の拠点を持つ、正当で連絡可能な事業者であることをパートナーの皆様にお約束します。","80":"本社","85":"道順を見る →","86":"WhatsAppで連絡する","87":"当社の取引デスクからの市場インサイト。","88":"UCO価格、持続可能性規制、再生可能原料の取引動向に関する市況解説——お取引先のバイヤーやパートナー向けに執筆しています。","89":"2026年に向けたUCO価格の変動要因","90":"EUのRED III目標、SAF義務化、原料獲得競争が廃棄物系オイルの需要をどのように変えつつあるか。","91":"記事を読む →","92":"バイヤー向けに解説するISCC認証","93":"チェーン・オブ・カストディ書類が実際に何を証明するのか、そしてそれがRED II報告になぜ重要なのか。","94":"記事を読む →","95":"サプライヤーから貨物へ：UCOの軌跡","96":"トレーサブルな出荷の裏にある調達、品質管理、輸出プロセスを詳しく解説します。","97":"記事を読む →","98":"メールで市場インサイトを受け取る","99":"UCO価格や再生可能原料規制に関する情報を不定期にお届けするメールリストにご登録ください。スパムはなく、パートナーの皆様が価値を認める貿易インサイトのみをお届けします。","100":"購読する →","101":"仕様をお知らせください。価格をご提示します。","102":"取引に関するお問い合わせに迅速に対応","103":"ご要望に応じてFOBおよびCIF価格をご提示","104":"契約前にサンプルCOAをご提供可能","105":"長期オフテイク契約も歓迎","108":"WhatsApp","109":"見積もりを依頼する","110":"義務は発生しません——取引に関するお問い合わせのみです。","111":"会社名","112":"担当者名","113":"会社メールアドレス","114":"製品","115":"数量（トン/月）","116":"仕向港","117":"備考","118":"問い合わせを送信 →","119":"マレーシアを拠点とする、持続可能な廃食用油および廃油系バイオ燃料原料のサプライヤー・輸出業者。認証済み・トレーサブル・グローバル。","120":"製品","121":"廃食用油（UCO）","122":"牛脂・魚油","123":"PFAD、POME・EFBオイル","124":"SBEO・酸化油","125":"会社","126":"会社概要","127":"取引の流れ","128":"市場","129":"アクセス","130":"インサイト","131":"お問い合わせ","135":"WhatsApp","137":"×","138":"サンプルCOA","139":"送付先をお知らせください。サンプル分析証明書をメールでお送りし、お問い合わせのフォローアップをいたします。","140":"会社名","141":"勤務先メールアドレス","142":"目標数量（トン/月）——任意","143":"サンプルCOAをメールで受け取る →","144":"お客様の情報は、COAの送付とお問い合わせのフォローアップのみに使用します。スパムはありません。","145":"受信トレイをご確認ください","146":"ありがとうございます——サンプルCOAはまもなくお客様のメールに届きます。当社の取引デスクより追ってご連絡いたします。","147":"閉じる","148":"×","149":"SafOilインサイトを購読する →"},"en":{"1":"About","2":"Products","3":"How It Works","4":"Markets","5":"Find Us","6":"Insights","7":"Get a Quote","8":"Request Pricing","9":"Turning waste oil into the world's <span class=\"gd\">cleaner fuel</span>.","10":"SafOil sources, supplies and exports consistent-grade Used Cooking Oil, tallow, PFAD, POME and acid oils from Malaysia — certified, traceable feedstock for biodiesel, renewable diesel and SAF producers worldwide.","11":"Get an export quote →","12":"View specifications","13":"A dedicated biofuel feedstock specialist.","14":"SafOil is a Malaysia-based supplier and exporter of waste-based and residual oil feedstock for the global biofuel industry.","15":"We source, process and export a full range of feedstocks — Used Cooking Oil, tallow, fish oil, PFAD, POME, EFB oil, spent bleaching earth oil and vegetable acid oils — supplying biodiesel, renewable diesel and sustainable aviation fuel producers across Europe, North America and Asia.","16":"Built around the principles of consistency, compliance and clean documentation, SafOil combines disciplined trade execution with ISCC-aligned traceability to give refiners a feedstock partner they can rely on — shipment after shipment.","17":"Feedstock expertise","18":"Deep knowledge of waste-oil and acid-oil markets, grades and global feedstock dynamics.","19":"Customer-centric","20":"Tailored solutions built around each client's specific volume, spec and logistics needs.","21":"Integrity first","22":"Honesty and transparency in every dealing — the foundation of long-term partnerships.","23":"Reliable supply chain","24":"Strong supplier partnerships and a robust network ensuring consistent, quality supply.","25":"Bridging supply, delivering excellence.","26":"\"We are committed to connecting reliable feedstock supply with the world's biofuel producers — delivering quality, traceability and integrity in every shipment.\"","27":"A specialist team with expertise in international trade, feedstock sourcing and the compliance requirements of the global renewable-fuels market.","28":"Waste &amp; residue feedstock, ready to ship.","29":"SafOil supplies a full range of waste-based and residual oil feedstocks for biodiesel, renewable diesel (HVO) and SAF producers — from used cooking oil and animal fats to palm residues and vegetable acid oils. Every consignment is lab-tested before loading, with a full certificate of analysis per batch and ISCC-aligned traceability.","30":"Used Cooking Oil (UCO)","31":"Filtered used cooking oil for biodiesel and oleochemical conversion — reliable export volumes at competitive FOB pricing. Standard and low-FFA premium grades available.","32":"Tallow (Animal Fat)","33":"Rendered animal-fat tallow for biodiesel and renewable-diesel feedstock. A high-energy, category-graded fat stream suited to FAME and HVO processing.","34":"Fish Oil","35":"Residual and waste-grade fish oil for advanced biofuel and oleochemical applications — a marine lipid feedstock with strong cold-flow characteristics.","36":"PFAD","37":"Palm Fatty Acid Distillate — a high-FFA palm refining co-product widely used as biodiesel and oleochemical feedstock. Consistent quality, bulk export volumes.","38":"POME Oil","39":"Palm Oil Mill Effluent oil — an Annex IX advanced feedstock recovered from palm milling. Double-counting eligible under RED II for renewable diesel and SAF.","40":"EFB Oil","41":"Empty Fruit Bunch oil — a residual palm-biomass oil stream for advanced biofuel production, supporting low-carbon-intensity feedstock requirements.","42":"Spent Bleaching Earth Oil (SBEO)","43":"Oil recovered from spent bleaching earth — an Annex IX Part A advanced residue feedstock. High-FFA stream for esterification and HVO processing routes.","44":"Soya Acid Oil","45":"Soybean acid oil — a high-FFA vegetable-oil refining residue for biodiesel and oleochemical feedstock, sourced for consistent export supply.","46":"Cotton Seed Acid Oil","47":"Cottonseed acid oil — a vegetable acid-oil residue stream for biodiesel and oleochemical conversion, available for contract and spot supply.","48":"Rice Bran Acid Oil","49":"Rice bran acid oil — a high-FFA by-product of rice bran oil refining, used as biodiesel feedstock and in oleochemical applications. Steady volumes from Asian sources.","50":"See our specification before you enquire.","51":"Download a sample Certificate of Analysis showing our typical UCO grade — FFA, moisture, sulphur and full quality parameters. Representative values; a signed batch COA is issued per shipment.","52":"Download sample COA →","53":"From supplier to certified cargo.","54":"A transparent, four-stage chain that keeps your feedstock compliant and your documentation audit-ready.","55":"Source","56":"Feedstock is sourced from a vetted network of trusted suppliers and processors across Malaysia and the region.","57":"Quality-check","58":"Material is checked and, where needed, processed to meet target FFA and moisture grades before dispatch.","59":"Verify","60":"Independent lab COA per batch, with full chain-of-custody and sustainability documentation.","61":"Export","62":"Loaded in flexitanks, ISO tanks or bulk vessels — FOB or CIF to your port of choice.","63":"Built for procurement teams that can't take risks.","64":"Refiners buy on three things: consistency, certification and clean paperwork. We are built around all three.","65":"Reliable grade, every batch","66":"Standardised processing and per-batch testing mean the spec you contract is the spec you receive — shipment after shipment.","67":"Certification-ready supply","68":"ISCC-aligned, RED II–compliant documentation with full chain-of-custody, so your feedstock counts toward your sustainability targets.","69":"Door-to-port handled","70":"Flexitank, ISO tank or bulk vessel, FOB or CIF. A dedicated trade and logistics desk manages documentation and shipping end to end.","71":"We ship where demand is.","72":"European Union","73":"RED II–driven demand from biodiesel and HVO refiners seeking waste-based feedstock.","74":"North America","75":"Renewable diesel and SAF producers under LCFS and RFS incentive programmes.","76":"East &amp; South Asia","77":"Regional oleochemical and biofuel buyers seeking steady, traceable supply.","78":"A real presence in Batu Caves, Selangor.","79":"SafOil operates from a commercial office in Batu Caves, Selangor, Malaysia — giving our partners the assurance of a legitimate, contactable business with a physical base in one of Asia's key trading hubs.","80":"Head Office","85":"Get directions →","86":"WhatsApp us","87":"Market intelligence from our trade desk.","88":"Market commentary on UCO pricing, sustainability regulation and the renewable-feedstock trade — written for the buyers and partners we work with.","89":"What's moving UCO prices into 2026","90":"How EU RED III targets, SAF mandates and feedstock competition are reshaping demand for waste-based oils.","91":"Read article →","92":"ISCC certification, explained for buyers","93":"What chain-of-custody documentation actually proves, and why it matters for your RED II reporting.","94":"Read article →","95":"From supplier to cargo: the UCO journey","96":"A look inside the sourcing, quality-control and export chain behind every traceable shipment.","97":"Read article →","98":"Get our market insights by email","99":"Join our list for occasional notes on UCO pricing and renewable-feedstock regulation. No spam — just the trade intelligence our partners value.","100":"Subscribe →","101":"Tell us your spec. Get a price.","102":"Prompt response to trade enquiries","103":"FOB &amp; CIF pricing on request","104":"Sample COA available before contract","105":"Long-term offtake agreements welcome","108":"WhatsApp","109":"Request a quote","110":"No obligation — trade enquiries only.","111":"Company name","112":"Contact name","113":"Business email","114":"Product","115":"Volume (MT / month)","116":"Destination port","117":"Notes","118":"Send enquiry →","119":"Supplier and exporter of sustainable Used Cooking Oil and waste-oil biofuel feedstock, based in Malaysia. Certified · Traceable · Global.","120":"Products","121":"Used Cooking Oil (UCO)","122":"Tallow &amp; Fish Oil","123":"PFAD, POME &amp; EFB Oil","124":"SBEO &amp; Acid Oils","125":"Company","126":"About Us","127":"How It Works","128":"Markets","129":"Find Us","130":"Insights","131":"Contact","135":"WhatsApp","137":"×","138":"Sample COA","139":"Tell us where to send it. We'll email the sample Certificate of Analysis and follow up on your enquiry.","140":"Company name","141":"Work email","142":"Target volume (MT / month) — optional","143":"Email me the sample COA →","144":"We use your details only to send the COA and follow up on your enquiry. No spam.","145":"Check your inbox","146":"Thanks — the sample COA is on its way to your email, and our trade desk will be in touch shortly.","147":"Close","148":"×","149":"Subscribe to SafOil Insights →"}}</script><script>
+(function(){
+  var SUPPORTED = ['en','zh-CN','th','vi','ja'];
+  var dataEl = document.getElementById('i18n-data');
+  var TRANSLATIONS = {};
+  try { TRANSLATIONS = JSON.parse(dataEl.textContent); } catch(e){}
+
+  function applyLanguage(lang){
+    if (!TRANSLATIONS[lang]) lang = 'en';
+    document.documentElement.setAttribute('lang', lang);
+    var dict = TRANSLATIONS[lang] || {};
+    var enDict = TRANSLATIONS.en || {};
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var key = el.getAttribute('data-i18n');
+      var val = dict[key] !== undefined ? dict[key] : enDict[key];
+      if (val !== undefined) el.innerHTML = val;
+    });
+    var sel = document.getElementById('lang-select');
+    if (sel) sel.value = lang;
+    try { localStorage.setItem('safoil_lang', lang); } catch(e){}
+  }
+
+  function detectInitialLanguage(){
+    try {
+      var saved = localStorage.getItem('safoil_lang');
+      if (saved && SUPPORTED.indexOf(saved) !== -1) return saved;
+    } catch(e){}
+    var nav = (navigator.language || '').toLowerCase();
+    if (nav.indexOf('zh') === 0) return 'zh-CN';
+    if (nav.indexOf('th') === 0) return 'th';
+    if (nav.indexOf('vi') === 0) return 'vi';
+    if (nav.indexOf('ja') === 0) return 'ja';
+    return 'en';
+  }
+
+  document.addEventListener('DOMContentLoaded', function(){
+    applyLanguage(detectInitialLanguage());
+    var sel = document.getElementById('lang-select');
+    if (sel) {
+      sel.addEventListener('change', function(){ applyLanguage(sel.value); });
+    }
+  });
+})();
+</script></body></html>
