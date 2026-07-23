@@ -1,4 +1,4 @@
-—---
+---
 title: 'Fish oil as a feedstock for biodiesel and sustainable aviation fuel'
 description: Where marine lipid feedstock fits in the renewable fuel supply chain, and what buyers should know about sourcing and quality.
 category: Outlook
