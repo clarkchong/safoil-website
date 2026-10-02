@@ -1,0 +1,283 @@
+---
+import Zh from '../../layouts/Zh.astro';
+
+const SITE = 'https://safoil.my';
+const jsonld = [
+  {
+    '@context': 'https://schema.org', '@type': 'Organization',
+    name: 'SafOil', url: SITE + '/zh/', email: 'sales@safoil.my', telephone: '+60 16-229 8119',
+    address: {
+      '@type': 'PostalAddress', streetAddress: '34-A, Jalan SG 3/2, Pusat Bandar Sri Gombak',
+      postalCode: '68100', addressLocality: 'Batu Caves', addressRegion: 'Selangor', addressCountry: 'MY',
+    },
+  },
+];
+
+const products = [
+  { zh: '废弃食用油', en: 'UCO', note: '过滤处理；标准级与低酸价优级', use: 'FAME · HVO · SAF', slug: 'used-cooking-oil-malaysia' },
+  { zh: '动物油脂', en: 'Tallow', note: '炼制动物脂，一类 / 三类（Cat 1 / Cat 3）', use: 'FAME · HVO', slug: '' },
+  { zh: '鱼油', en: 'Fish oil', note: '残余及废弃级海洋油脂', use: '生物燃料原料', slug: '' },
+  { zh: '棕榈脂肪酸馏出物', en: 'PFAD', note: '棕榈精炼副产品，高游离脂肪酸，大宗出口', use: '生物柴油 · 油脂化工', slug: 'pfad-supplier-malaysia' },
+  { zh: '棕榈油厂废水油 / 空果串油', en: 'POME / EFB oil', note: 'RED II 附录 IX 先进原料，可双倍计算', use: 'HVO · SAF', slug: 'palm-oil-residue-feedstock' },
+  { zh: '酸化油 / 废白土油', en: 'Acid oils / SBEO', note: '大豆、棉籽、米糠酸化油及废白土油', use: 'FAME · 油脂化工', slug: 'acid-oil-supplier-malaysia' },
+  { zh: '生物重油', en: 'Bio Heavy Oil', note: '混合脂肪酸燃料油，非危险品', use: '电厂 · 工业锅炉 · 船用燃料', slug: 'bio-heavy-oil-malaysia' },
+];
+---
+<Zh
+  title="马来西亚生物燃料原料供应商 | UCO、PFAD、POME、酸化油 — SafOil"
+  description="SafOil 是马来西亚生物燃料原料供应商与出口商，供应废弃食用油（UCO）、PFAD、POME 油、酸化油等，每批附独立检测报告（COA），FOB / CIF 出口；同时长期寻找稳定的上游供应商。"
+  path="/zh/"
+  enPath="/"
+  jsonld={jsonld}
+>
+
+<header class="zh-hero">
+  <div class="wrap">
+    <span class="kicker mono">马来西亚 · 生物燃料原料 供应与采购</span>
+    <h1>一个可追溯的伙伴，<br />连接原料的两端。</h1>
+    <p class="hero-sub">SafOil 立足马来西亚，向生物柴油（FAME）、加氢植物油（HVO）及可持续航空燃料（SAF）生产商供应废弃油脂与棕榈残余原料；同时，我们长期寻找货源稳定、文件齐全的上游供应商。</p>
+
+    <div class="role-grid">
+      <div class="role buy">
+        <div class="rtop"><span class="mono">A / 我是采购方</span><span class="mono en">Buyers</span></div>
+        <h2>采购原料</h2>
+        <ul>
+          <li>每批装运前经独立实验室检测，随附 COA</li>
+          <li>ISCC 对齐的可追溯文件与完整监管链</li>
+          <li>FOB / CIF，柔性袋、ISO 罐或散装船</li>
+        </ul>
+        <div class="rfoot">
+          <small>3 个工作日内回复报价及样品 COA</small>
+          <a href="#enquiry" class="btn" data-role="buyer">获取报价 →</a>
+        </div>
+      </div>
+      <div class="role sup">
+        <div class="rtop"><span class="mono">B / 我是供应方</span><span class="mono en">Suppliers</span></div>
+        <h2>成为合作供应商</h2>
+        <ul>
+          <li>长期、持续的采购需求，欢迎废弃油脂及残余油脂货源</li>
+          <li>清晰的质量标准与验收流程，不临时变更</li>
+          <li>价格、结算与付款条件在合同中明确约定</li>
+        </ul>
+        <div class="rfoot">
+          <small>提交货源信息，我们主动联系</small>
+          <a href="#enquiry" class="btn" data-role="supplier">提交货源 →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap">
+    <div><div class="n">7 类产品</div><div class="l">一个供应商，统一采购</div></div>
+    <div><div class="n">每批 COA</div><div class="l">独立实验室，装运前出具</div></div>
+    <div><div class="n">3 个工作日</div><div class="l">询盘回复 FOB / CIF 报价</div></div>
+    <div><div class="n">长期协议</div><div class="l">欢迎年度 / 长期承购</div></div>
+  </div>
+</div>
+
+<section id="products" class="zh-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow mono">01 · 产品范围</span>
+      <h2>一份清单，覆盖主要原料</h2>
+    </div>
+    <div class="tbl-wrap">
+      <table class="spec-table">
+        <tr><th>品名</th><th>EN / 简称</th><th>等级 / 说明</th><th>主要用途</th></tr>
+        {products.map((p) => (
+          <tr>
+            <td>{p.slug ? <a href={`/zh/products/${p.slug}`}>{p.zh}</a> : <strong>{p.zh}</strong>}</td>
+            <td class="mono" style="font-size:12px">{p.en}</td>
+            <td>{p.note}</td>
+            <td>{p.use}</td>
+          </tr>
+        ))}
+      </table>
+    </div>
+    <p style="margin-top:18px"><a href="/zh/products/biofuel-feedstock-malaysia" style="color:var(--leaf);font-weight:600">查看全部原料详情 →</a></p>
+  </div>
+</section>
+
+<section id="buyers" class="zh-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow mono">02 · 采购合作</span>
+      <h2>从询盘到装运，每一步都有文件</h2>
+      <p>告诉我们品名、目标数量、指标与目的港，我们在 3 个工作日内回复。</p>
+    </div>
+    <div class="steps5">
+      <div><span class="mono">Step 1</span><b>询盘</b><p>品名、数量、指标、目的港</p></div>
+      <div><span class="mono">Step 2</span><b>报价</b><p>FOB / CIF 报价及样品 COA</p></div>
+      <div><span class="mono">Step 3</span><b>样品</b><p>签约前可提供样品检测报告</p></div>
+      <div><span class="mono">Step 4</span><b>合同</b><p>确认指标、数量、交货条款与付款方式</p></div>
+      <div><span class="mono">Step 5</span><b>装运</b><p>单证齐全，到港即可卸货</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="suppliers" class="sup-band">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow mono">03 · 供应合作</span>
+      <h2>有稳定货源？<br />我们在找长期伙伴。</h2>
+      <p>我们看重的不是一票货，而是能持续交付、文件清楚的合作关系。合作前会进行样品检测与基本尽职调查，这也是对双方的保护。</p>
+      <a href="#enquiry" class="btn" data-role="supplier">提交货源信息 →</a>
+    </div>
+    <div class="sup-steps">
+      <div><span class="mono">01</span><div><b>提交资料</b><small>品类、月供应量、所在地 / 装货港、现有认证</small></div></div>
+      <div><span class="mono">02</span><div><b>样品检测</b><small>按目标指标检测游离脂肪酸、水分及杂质</small></div></div>
+      <div><span class="mono">03</span><div><b>尽职调查</b><small>营业执照、出口资质、可追溯文件</small></div></div>
+      <div><span class="mono">04</span><div><b>长期合作</b><small>框架协议，按月 / 按季度稳定采购</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="quality" class="zh-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow mono">04 · 质量与认证</span>
+      <h2>四段式链条，文件可审计</h2>
+    </div>
+    <div class="chain">
+      <div><span class="mono">货源 Source</span><b>审核过的供应网络</b><p>马来西亚及区域内经审核的供应商与加工厂</p></div>
+      <div><span class="mono">品检 QC</span><b>按目标指标处理</b><p>必要时加工至目标游离脂肪酸及水分等级</p></div>
+      <div><span class="mono">检验 Verify</span><b>每批独立 COA</b><p>完整监管链文件，ISCC 对齐，兼容 RED II</p></div>
+      <div><span class="mono">出口 Export</span><b>门到港物流</b><p>柔性袋、ISO 罐或散装船，FOB / CIF</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="zh-sec">
+  <div class="wrap about-zh">
+    <div>
+      <span class="eyebrow mono">05 · 关于我们</span>
+      <h2 style="font-size:clamp(28px,3.6vw,44px);margin-bottom:18px">注册在马来西亚，<br />文件清楚，交易可靠。</h2>
+      <p>SafOil 是马来西亚生物燃料原料供应商与出口商，办公室位于雪兰莪州黑风洞（Batu Caves）。为生物柴油、HVO、SAF 及油脂化工买家供应原料。</p>
+      <p style="margin-top:14px">我们坚持稳定的品质、合规的文件与诚信的交易——这是长期合作的基础。欢迎预约来访。</p>
+    </div>
+    <div class="facts-card">
+      <div><span>公司注册号</span><span class="mono" style="letter-spacing:.04em">20251026727</span></div>
+      <div><span>办公地址</span><span lang="en">34-A, Jalan SG 3/2, Pusat Bandar Sri Gombak, 68100 Batu Caves, Selangor, Malaysia</span></div>
+      <div><span>业务发展经理</span><span lang="en">Lee Kian Huat</span></div>
+      <div><span>办公时间</span><span>周一至周五 9:00–18:00（马来西亚时间，与北京时间相同）</span></div>
+      <div><span>沟通语言</span><span>中文（普通话 / 粤语）· English · Bahasa Malaysia</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="enquiry" class="zh-sec" style="padding-bottom:110px">
+  <div class="wrap">
+    <div class="enq">
+      <div class="enq-form">
+        <span class="mono" style="color:var(--leaf)">06 · 联系我们</span>
+        <h2 id="q_title">获取报价</h2>
+        <div class="role-tabs" role="group" aria-label="选择身份">
+          <button type="button" id="tab_buyer" aria-pressed="true">我是采购方</button>
+          <button type="button" id="tab_supplier" aria-pressed="false">我是供应方</button>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="q_company">公司名称 *</label><input type="text" id="q_company" placeholder="贵公司名称" /></div>
+          <div class="field"><label for="q_name">联系人</label><input type="text" id="q_name" placeholder="姓名" /></div>
+        </div>
+        <div class="field"><label for="q_contact">微信号 / 邮箱 / 电话 *</label><input type="text" id="q_contact" placeholder="方便我们联系您" /></div>
+        <div class="row2">
+          <div class="field"><label for="q_product">品名</label>
+            <select id="q_product">
+              <option>废弃食用油（UCO）</option><option>动物油脂（Tallow）</option><option>鱼油（Fish oil）</option>
+              <option>棕榈脂肪酸馏出物（PFAD）</option><option>POME 油</option><option>EFB 油</option>
+              <option>废白土油（SBEO）</option><option>大豆酸化油</option><option>棉籽酸化油</option><option>米糠酸化油</option>
+              <option>生物重油（Bio Heavy Oil）</option><option>其他</option>
+            </select>
+          </div>
+          <div class="field"><label for="q_volume" id="q_volume_l">目标数量（吨/月）</label><input type="text" id="q_volume" placeholder="例如：200" /></div>
+        </div>
+        <div class="field"><label for="q_port" id="q_port_l">目的港</label><input type="text" id="q_port" placeholder="例如：上海、宁波、鹿特丹" /></div>
+        <div class="field"><label for="q_notes">备注</label><textarea id="q_notes" rows="2" placeholder="指标要求、贸易条款、时间安排……"></textarea></div>
+        <div class="err" id="q_err">请填写公司名称和联系方式。</div>
+        <div class="send-row">
+          <button type="button" class="btn" id="send_mail">邮件发送询盘</button>
+          <button type="button" class="btn btn-ghost" id="send_copy">复制内容，发到微信</button>
+        </div>
+        <button type="button" id="send_wa" style="background:none;border:none;font:inherit;font-size:14px;color:var(--leaf);text-decoration:underline;cursor:pointer;margin-top:12px;padding:6px 0">或通过 WhatsApp 发送</button>
+        <div class="copy-ok" id="copy_ok">已复制。粘贴到微信或邮件发给我们即可。</div>
+        <p style="font-size:13px;color:var(--mute);margin-top:12px" id="q_note">3 个工作日内回复 FOB / CIF 报价及样品 COA。</p>
+      </div>
+      <div class="enq-side">
+        <div class="wechat">
+          <img src="/assets/wechat-qr.png" alt="SafOil 微信二维码" width="150" height="150" loading="lazy" onload="this.closest('.wechat').classList.add('on')" />
+          <div><b>扫码添加微信</b><small>中文对接，回复更快</small></div>
+        </div>
+        <b style="font-size:20px">直接联系我们</b>
+        <div class="contact-list">
+          <div><span>邮箱</span><a href="mailto:sales@safoil.my">sales@safoil.my</a></div>
+          <div><span>电话</span><a href="tel:+60162298119">+60 16-229 8119</a></div>
+          <div><span>WhatsApp</span><a href="https://wa.me/60162298119" target="_blank" rel="noopener">+60 16-229 8119</a></div>
+          <div><span>时间</span><span>周一至周五 9:00–18:00（与北京时间相同）</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script is:inline>
+(function () {
+  var EMAIL = 'sales@safoil.my';
+  var WA = '60162298119';
+  var role = 'buyer';
+  var $ = function (id) { return document.getElementById(id); };
+  var TEXT = {
+    buyer:    { title: '获取报价', vol: '目标数量（吨/月）', port: '目的港', portPh: '例如：上海、宁波、鹿特丹', note: '3 个工作日内回复 FOB / CIF 报价及样品 COA。', head: 'SafOil 采购询盘' },
+    supplier: { title: '提交货源信息', vol: '可供数量（吨/月）', port: '货源地 / 装货港', portPh: '例如：广东、山东、天津港', note: '我们会在审阅资料后联系您，安排样品检测。', head: 'SafOil 货源信息' }
+  };
+  function setRole(r) {
+    role = r; var t = TEXT[r];
+    $('q_title').textContent = t.title;
+    $('q_volume_l').textContent = t.vol;
+    $('q_port_l').textContent = t.port;
+    $('q_port').placeholder = t.portPh;
+    $('q_note').textContent = t.note;
+    $('tab_buyer').setAttribute('aria-pressed', r === 'buyer');
+    $('tab_supplier').setAttribute('aria-pressed', r === 'supplier');
+  }
+  $('tab_buyer').onclick = function () { setRole('buyer'); };
+  $('tab_supplier').onclick = function () { setRole('supplier'); };
+  document.querySelectorAll('[data-role]').forEach(function (a) {
+    a.addEventListener('click', function () { setRole(a.getAttribute('data-role')); });
+  });
+
+  function message() {
+    var company = $('q_company').value.trim(), contact = $('q_contact').value.trim();
+    var ok = company && contact;
+    $('q_err').style.display = ok ? 'none' : 'block';
+    if (!ok) return null;
+    var t = TEXT[role];
+    return t.head + '（来自 safoil.my/zh）\n' +
+      '公司：' + company + '\n联系人：' + ($('q_name').value.trim() || '-') + '\n联系方式：' + contact +
+      '\n品名：' + $('q_product').value + '\n' + t.vol + '：' + ($('q_volume').value.trim() || '-') +
+      '\n' + t.port + '：' + ($('q_port').value.trim() || '-') + '\n备注：' + ($('q_notes').value.trim() || '-');
+  }
+  $('send_mail').onclick = function () {
+    var m = message(); if (!m) return;
+    location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(TEXT[role].head + ' — ' + $('q_company').value.trim()) + '&body=' + encodeURIComponent(m);
+  };
+  $('send_copy').onclick = function () {
+    var m = message(); if (!m) return;
+    var done = function () { $('copy_ok').style.display = 'block'; };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(m).then(done, function () { fallback(m); done(); });
+    } else { fallback(m); done(); }
+  };
+  function fallback(m) {
+    var ta = document.createElement('textarea'); ta.value = m; ta.style.position = 'fixed'; ta.style.opacity = '0';
+    document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (e) {} ta.remove();
+  }
+  $('send_wa').onclick = function () {
+    var m = message(); if (!m) return;
+    var url = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(m);
+    var w = window.open(url, '_blank', 'noopener'); if (!w) location.href = url;
+  };
+})();
+</script>
+</Zh>
