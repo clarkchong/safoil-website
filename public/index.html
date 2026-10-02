@@ -545,12 +545,12 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
     <div class="coa-band">
       <div class="coa-card">
         <div class="ct">
-          <span class="pill">Free download</span>
+          <span class="pill">On request</span>
           <h3>See our specification before you enquire.</h3>
-          <p>Download a sample Certificate of Analysis showing our typical UCO grade — FFA, moisture, sulphur and full quality parameters. Representative values; a signed batch COA is issued per shipment.</p>
+          <p>Request a sample Certificate of Analysis showing our typical UCO grade — FFA, moisture, sulphur and full quality parameters. Representative values; a signed batch COA is issued per shipment.</p>
         </div>
         <div class="ca">
-          <button class="btn btn-gold" onclick="openCoa()">Download sample COA →</button>
+          <button class="btn btn-gold" onclick="openCoa()">Request sample COA →</button>
         </div>
       </div>
     </div>
@@ -738,7 +738,8 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
       <div class="field"><label>Destination port</label><input type="text" id="q_port" placeholder="e.g. Rotterdam"></div>
       <div class="field"><label>Notes</label><textarea rows="2" id="q_notes" placeholder="Spec requirements, Incoterms, timeline…"></textarea></div>
       <div class="err" id="q_err">Please enter your company and a valid business email.</div>
-      <button class="btn btn-gold" id="q_submit" onclick="submitQuote()">Send enquiry →</button>
+      <button class="btn btn-gold" id="q_submit" onclick="submitQuote()">Send enquiry via WhatsApp →</button>
+      <p class="qs" id="q_note" style="margin-top:10px">Opens WhatsApp with your details filled in — just press send. No WhatsApp? Email <a href="mailto:sales@safoil.my?subject=SafOil%20quote%20enquiry" style="color:var(--gold);font-weight:600">sales@safoil.my</a>.</p>
     </div>
   </div>
 </section>
@@ -777,7 +778,7 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
         <svg width="30" height="30" viewBox="0 0 34 34" fill="none"><circle cx="17" cy="17" r="16" fill="#12796E"/><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"/></svg>
         <h3>Sample COA</h3>
       </div>
-      <p class="msub">Tell us where to send it. We'll email the sample Certificate of Analysis and follow up on your enquiry.</p>
+      <p class="msub">Tell us where to send it. Your request opens in WhatsApp — press send, and our trade desk will email the sample Certificate of Analysis to your work email.</p>
 
       <div class="field">
         <label>Company name</label>
@@ -794,14 +795,15 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
         <input type="text" id="f_volume" placeholder="e.g. 200">
       </div>
 
-      <button class="btn btn-gold" id="coaSubmit" onclick="submitCoa()">Email me the sample COA →</button>
+      <button class="btn btn-gold" id="coaSubmit" onclick="submitCoa()">Request via WhatsApp →</button>
+      <p class="priv">No WhatsApp? Email <a href="mailto:sales@safoil.my?subject=Sample%20COA%20request" style="color:var(--gold);font-weight:600">sales@safoil.my</a> instead.</p>
       <p class="priv">We use your details only to send the COA and follow up on your enquiry. No spam.</p>
     </div>
 
     <div class="modal-success" id="coaSuccess" style="display:none">
       <div class="tick"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F1F6F5" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg></div>
-      <h3>Check your inbox</h3>
-      <p>Thanks — the sample COA is on its way to your email, and our trade desk will be in touch shortly.</p>
+      <h3>Almost done</h3>
+      <p id="coaSuccessMsg">WhatsApp has opened with your request — just press send. Our trade desk will email the sample COA to you after a quick check.</p>
       <button class="btn btn-ghost" onclick="closeCoa()">Close</button>
     </div>
   </div>
@@ -848,55 +850,34 @@ function isBusinessEmail(email){
   return !FREE_DOMAINS.includes(domain);
 }
 
-async function submitCoa(){
+// Enquiries currently go via WhatsApp (form backend not yet configured).
+const WA_NUMBER = "60162298119";
+function openWhatsApp(text){
+  const url = "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(text);
+  const w = window.open(url, "_blank", "noopener");
+  if(!w) window.location.href = url;
+}
+
+function submitCoa(){
   const company = document.getElementById('f_company').value.trim();
   const email = document.getElementById('f_email').value.trim();
   const volume = document.getElementById('f_volume').value.trim();
   let valid = true;
-
   document.getElementById('e_company').style.display = company ? 'none':'block';
   if(!company) valid=false;
-
   document.getElementById('e_email').style.display = isBusinessEmail(email) ? 'none':'block';
   if(!isBusinessEmail(email)) valid=false;
-
   if(!valid) return;
 
-  const btn = document.getElementById('coaSubmit');
-  btn.textContent = 'Sending…'; btn.style.opacity='.7';
-
-  try{
-    const res = await fetch(FORMSPREE_ENDPOINT, {
-      method:'POST',
-      headers:{'Accept':'application/json','Content-Type':'application/json'},
-      body: JSON.stringify({
-        _subject: "New SafOil COA download — " + company,
-        lead_type: "Sample COA download",
-        company: company,
-        email: email,
-        target_volume_mt_month: volume || "(not provided)",
-        page: location.href
-      })
-    });
-    if(res.ok){
-      // show success + trigger the actual file download for the user
-      document.getElementById('coaForm').style.display='none';
-      document.getElementById('coaSuccess').style.display='block';
-      const a=document.createElement('a');
-      a.href=COA_FILE_URL; a.download="SafOil-Sample-COA.pdf";
-      document.body.appendChild(a); a.click(); a.remove();
-    } else {
-      alert('Something went wrong sending your request. Please email sales@safoil.my directly.');
-    }
-  }catch(err){
-    alert('Network error. Please email sales@safoil.my directly.');
-  }finally{
-    btn.textContent='Email me the sample COA →'; btn.style.opacity='1';
-  }
+  openWhatsApp(
+    "Hi SafOil trade desk, I'd like to request a sample COA (via safoil.my).\n" +
+    "Company: " + company + "\nWork email: " + email + "\nTarget volume (MT/month): " + (volume || "not provided"));
+  document.getElementById('coaForm').style.display='none';
+  document.getElementById('coaSuccess').style.display='block';
 }
 
 // ---- QUOTE FORM ----
-async function submitQuote(){
+function submitQuote(){
   const company = document.getElementById('q_company').value.trim();
   const name    = document.getElementById('q_name').value.trim();
   const email   = document.getElementById('q_email').value.trim();
@@ -909,40 +890,14 @@ async function submitQuote(){
   document.getElementById('q_err').style.display = valid ? 'none' : 'block';
   if(!valid) return;
 
+  openWhatsApp(
+    "Hi SafOil trade desk, quote enquiry from safoil.my:\n" +
+    "Company: " + company + "\nContact: " + (name || "-") + "\nEmail: " + email +
+    "\nProduct: " + product + "\nVolume (MT/month): " + (volume || "not provided") +
+    "\nDestination port: " + (port || "not provided") + "\nNotes: " + (notes || "-"));
   const btn = document.getElementById('q_submit');
-  btn.textContent = 'Sending…'; btn.style.opacity='.7';
-
-  const payload = {
-    _subject: "New SafOil quote enquiry — " + company,
-    _replyto: email,
-    lead_type: "Quote enquiry",
-    company, contact_name: name, email,
-    product, volume_mt_month: volume || "(not provided)",
-    destination_port: port || "(not provided)",
-    notes: notes || "(none)", page: location.href
-  };
-
-  try{
-    const res = await fetch(FORMSPREE_ENDPOINT, {
-      method:'POST',
-      headers:{'Accept':'application/json','Content-Type':'application/json'},
-      body: JSON.stringify(payload)
-    });
-    if(res.ok){
-      btn.textContent = '✓ Enquiry sent';
-      document.getElementById('q_err').style.display='none';
-      setTimeout(()=>{btn.textContent='Send enquiry →'; btn.style.opacity='1';
-        ['q_company','q_name','q_email','q_volume','q_port','q_notes'].forEach(id=>document.getElementById(id).value='');
-      }, 2600);
-    } else { throw new Error('bad response'); }
-  }catch(err){
-    // Fallback: open the user's mail client pre-addressed to sales@safoil.my
-    const body = encodeURIComponent(
-      `Company: ${company}\nContact: ${name}\nEmail: ${email}\nProduct: ${product}\n`+
-      `Volume (MT/month): ${volume}\nDestination port: ${port}\nNotes: ${notes}`);
-    window.location.href = `mailto:${SALES_EMAIL}?subject=${encodeURIComponent('SafOil quote enquiry — '+company)}&body=${body}`;
-    btn.textContent='Send enquiry →'; btn.style.opacity='1';
-  }
+  btn.textContent = '✓ WhatsApp opened — press send';
+  setTimeout(()=>{ btn.textContent='Send enquiry via WhatsApp →'; }, 6000);
 }
 
 // ---- INSIGHTS ARTICLES ----
