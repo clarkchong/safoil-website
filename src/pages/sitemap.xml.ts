@@ -10,6 +10,7 @@ const staticPages = [
   { path: '/products/pfad-supplier-malaysia', lastmod: '2026-09-15', priority: '0.8' },
   { path: '/products/palm-oil-residue-feedstock', lastmod: '2026-09-15', priority: '0.8' },
   { path: '/products/acid-oil-supplier-malaysia', lastmod: '2026-09-15', priority: '0.8' },
+  { path: '/products/bio-heavy-oil-malaysia', lastmod: '2026-10-02', priority: '0.8' },
 ];
 
 export async function GET() {
