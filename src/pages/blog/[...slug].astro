@@ -32,7 +32,7 @@ const jsonld = {
 };
 ---
 <Base
-  title={`${post.data.title} | SafOil Insights`}
+  title={post.data.seoTitle ? `${post.data.seoTitle} | SafOil` : `${post.data.title} | SafOil Insights`}
   description={post.data.description}
   canonical={url}
   ogtype="article"
