@@ -36,4 +36,4 @@ We source from MPOB-licensed refiners, test every consignment before loading, an
 Tell us your volume, grade and destination and we'll structure an offer.
 
 - **Email:** [sales@safoil.my](mailto:sales@safoil.my)
-- **WhatsApp:** [message our trade desk](https://wa.me/60183237182)
+- **WhatsApp:** [message our trade desk](https://wa.me/60162298119)

@@ -35,6 +35,6 @@ Three principles guide every deal: **consistency** — the spec you contract is 
 Whether you are a refiner planning your feedstock book, a collector with volume to place, or simply curious about the market, we would be glad to hear from you.
 
 - **Email:** [sales@safoil.my](mailto:sales@safoil.my)
-- **WhatsApp:** [message our trade desk](https://wa.me/60183237182)
+- **WhatsApp:** [message our trade desk](https://wa.me/60162298119)
 
 Follow along here and on LinkedIn for market commentary, product outlooks and notes from the feedstock trade. We are just getting started — and we are glad you are here.

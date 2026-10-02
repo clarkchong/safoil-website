@@ -33,4 +33,4 @@ The catch for buyers: **classification is the product.** Without documented chai
 We provide ISCC-aligned documentation and a certificate of analysis per batch, with chain-of-custody records that support the advanced classification your compliance team needs to report the volume. Because these streams are allocated to firm demand, the earlier you share your target volume and destination, the better we can secure supply.
 
 - **Email:** [sales@safoil.my](mailto:sales@safoil.my)
-- **WhatsApp:** [message our trade desk](https://wa.me/60183237182)
+- **WhatsApp:** [message our trade desk](https://wa.me/60162298119)

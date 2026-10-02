@@ -46,4 +46,4 @@ For sellers — restaurants, food manufacturers, institutional kitchens and indu
 
 If you are a biodiesel producer, SAF refiner, industrial fuel buyer or sustainability procurement team planning your 2026 feedstock book, we would be glad to talk it through.
 
-**Email:** [sales@safoil.my](mailto:sales@safoil.my) · **WhatsApp:** [message our trade desk](https://wa.me/60183237182)
+**Email:** [sales@safoil.my](mailto:sales@safoil.my) · **WhatsApp:** [message our trade desk](https://wa.me/60162298119)

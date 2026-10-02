@@ -37,4 +37,4 @@ We supply standard and low-FFA premium grades, lab-tested per batch with a certi
 If you're planning your feedstock book, we'd be glad to talk it through.
 
 - **Email:** [sales@safoil.my](mailto:sales@safoil.my)
-- **WhatsApp:** [message our trade desk](https://wa.me/60183237182)
+- **WhatsApp:** [message our trade desk](https://wa.me/60162298119)
