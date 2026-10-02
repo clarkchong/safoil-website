@@ -1,5 +1,5 @@
 ---
-const { title, description, canonical, ogtype = 'website', jsonld } = Astro.props;
+const { title, description, canonical, ogtype = 'website', jsonld, noindex = false } = Astro.props;
 const base = 'https://safoil.my';
 const url = canonical || base + Astro.url.pathname;
 ---
@@ -11,7 +11,7 @@ const url = canonical || base + Astro.url.pathname;
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={url} />
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large, max-snippet:-1'} />
 <meta http-equiv="content-language" content="en" />
 <link rel="alternate" hreflang="en" href={url} />
 <link rel="alternate" hreflang="x-default" href={url} />
@@ -43,7 +43,7 @@ const url = canonical || base + Astro.url.pathname;
     </a>
     <div class="nav-links">
       <a href="/#about">About</a>
-      <a href="/products/biofuel-feedstock-malaysia.html">Products</a>
+      <a href="/products/biofuel-feedstock-malaysia">Products</a>
       <a href="/#process">How It Works</a>
       <a href="/#markets">Markets</a>
       <a href="/blog/">Insights</a>
@@ -65,10 +65,10 @@ const url = canonical || base + Astro.url.pathname;
       <div>
         <div class="mono" style="color:var(--brand-soft);margin-bottom:16px">Products</div>
         <div style="display:flex;flex-direction:column;gap:10px;font-size:14px">
-          <a href="/products/used-cooking-oil-malaysia.html" style="color:rgba(241,246,245,.8);text-decoration:none">Used Cooking Oil (UCO)</a>
-          <a href="/products/pfad-supplier-malaysia.html" style="color:rgba(241,246,245,.8);text-decoration:none">PFAD</a>
-          <a href="/products/palm-oil-residue-feedstock.html" style="color:rgba(241,246,245,.8);text-decoration:none">POME &amp; EFB Oil</a>
-          <a href="/products/acid-oil-supplier-malaysia.html" style="color:rgba(241,246,245,.8);text-decoration:none">Acid Oils &amp; SBEO</a>
+          <a href="/products/used-cooking-oil-malaysia" style="color:rgba(241,246,245,.8);text-decoration:none">Used Cooking Oil (UCO)</a>
+          <a href="/products/pfad-supplier-malaysia" style="color:rgba(241,246,245,.8);text-decoration:none">PFAD</a>
+          <a href="/products/palm-oil-residue-feedstock" style="color:rgba(241,246,245,.8);text-decoration:none">POME &amp; EFB Oil</a>
+          <a href="/products/acid-oil-supplier-malaysia" style="color:rgba(241,246,245,.8);text-decoration:none">Acid Oils &amp; SBEO</a>
           <a href="/blog/" style="color:rgba(241,246,245,.8);text-decoration:none">Insights</a>
         </div>
       </div>
