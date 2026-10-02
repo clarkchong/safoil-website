@@ -1,0 +1,94 @@
+---
+// Shared shell for Chinese product pages: hero, prose (slot), FAQ, related, CTA.
+import Zh from '../layouts/Zh.astro';
+
+interface Faq { q: string; a: string }
+interface Rel { slug: string; rk: string; h: string; p: string }
+interface Props {
+  slug: string;          // same slug as the English page
+  title: string;
+  description: string;
+  crumb: string;
+  eyebrow: string;
+  h1: string;
+  lede: string;
+  faqs: Faq[];
+  related: Rel[];
+}
+const { slug, title, description, crumb, eyebrow, h1, lede, faqs, related } = Astro.props;
+const SITE = 'https://safoil.my';
+const path = `/zh/products/${slug}`;
+const enPath = `/products/${slug}`;
+
+const jsonld = [
+  {
+    '@context': 'https://schema.org', '@type': 'Product', name: h1, description,
+    category: '生物燃料原料', url: SITE + path, inLanguage: 'zh-Hans',
+    brand: { '@type': 'Brand', name: 'SafOil' },
+    manufacturer: { '@type': 'Organization', name: 'SafOil', url: SITE + '/zh/' },
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '首页', item: SITE + '/zh/' },
+      { '@type': 'ListItem', position: 2, name: '产品范围', item: SITE + '/zh/products/biofuel-feedstock-malaysia' },
+      { '@type': 'ListItem', position: 3, name: crumb, item: SITE + path },
+    ],
+  },
+  {
+    '@context': 'https://schema.org', '@type': 'FAQPage',
+    mainEntity: faqs.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+  },
+];
+const mail = `mailto:sales@safoil.my?subject=${encodeURIComponent('询盘：' + crumb)}`;
+---
+<Zh title={title} description={description} path={path} enPath={enPath} ogtype="product" jsonld={jsonld}>
+<section class="subpage-hero">
+  <div class="wrap">
+    <div class="crumbs">
+      <a href="/zh/">首页</a><span class="sep">/</span>
+      <a href="/zh/products/biofuel-feedstock-malaysia">产品范围</a><span class="sep">/</span>
+      <span class="cur">{crumb}</span>
+    </div>
+    <span class="eyebrow mono">{eyebrow}</span>
+    <h1>{h1}</h1>
+    <p class="lede">{lede}</p>
+    <div class="hero-cta">
+      <a href="/zh/#enquiry" class="btn">获取报价 →</a>
+      <a href={mail} class="btn btn-ghost">索取样品 COA</a>
+    </div>
+  </div>
+</section>
+<section class="content">
+  <div class="wrap">
+    <div class="prose">
+      <slot />
+      <h2 style="margin-top:52px">常见问题</h2>
+      {faqs.map((f) => (
+        <div class="faq-item"><h3>{f.q}</h3><p>{f.a}</p></div>
+      ))}
+    </div>
+  </div>
+</section>
+<section class="related">
+  <div class="wrap">
+    <span class="mono" style="color:var(--leaf)">相关原料</span>
+    <div class="related-grid">
+      {related.map((r) => (
+        <a class="rel-card" href={`/zh/products/${r.slug}`}><div class="rk">{r.rk}</div><h4>{r.h}</h4><p>{r.p}</p></a>
+      ))}
+    </div>
+  </div>
+</section>
+<section class="cta-band">
+  <div class="wrap">
+    <h2>告诉我们您的指标，我们给您报价。</h2>
+    <p>FOB / CIF 报价，签约前可提供样品 COA，3 个工作日内回复。</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="/zh/#enquiry" class="btn" style="background:var(--brand-soft);color:var(--ink)">发送询盘 →</a>
+      <a href={mail} class="btn btn-ghost" style="color:var(--paper);border-color:var(--paper)">邮件联系</a>
+      <a href="https://wa.me/60162298119" class="btn btn-ghost" style="color:var(--paper);border-color:var(--paper)" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</section>
+</Zh>
