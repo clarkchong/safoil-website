@@ -1,0 +1,108 @@
+---
+// Simplified Chinese layout for /zh/ pages.
+// Built to work inside mainland China: no Google Fonts, Google Maps, reCAPTCHA or
+// YouTube. WhatsApp is kept as a secondary channel; email and WeChat lead.
+interface Props {
+  title: string;
+  description: string;
+  path: string;      // this page, e.g. '/zh/products/pfad-supplier-malaysia'
+  enPath: string;    // English twin, e.g. '/products/pfad-supplier-malaysia'
+  ogtype?: string;
+  jsonld?: object[];
+}
+const { title, description, path, enPath, ogtype = 'website', jsonld = [] } = Astro.props;
+const SITE = 'https://safoil.my';
+const url = SITE + path;
+const enUrl = SITE + enPath;
+
+// CONFIG
+// Baidu Tongji (百度统计) site ID. Leave empty to switch analytics off.
+const BAIDU_TONGJI_ID = '';
+---
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="applicable-device" content="pc,mobile" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={url} />
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+<meta http-equiv="content-language" content="zh-CN" />
+<link rel="alternate" hreflang="en" href={enUrl} />
+<link rel="alternate" hreflang="zh-Hans" href={url} />
+<link rel="alternate" hreflang="x-default" href={enUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={ogtype} />
+<meta property="og:url" content={url} />
+<meta property="og:site_name" content="SafOil" />
+<meta property="og:locale" content="zh_CN" />
+<meta property="og:image" content={SITE + '/assets/og-safoil.jpg'} />
+<link rel="stylesheet" href="/safoil.css" />
+<link rel="stylesheet" href="/zh.css" />
+{jsonld.map((j) => <script type="application/ld+json" set:html={JSON.stringify(j)} />)}
+{BAIDU_TONGJI_ID && (
+  <script is:inline set:html={`var _hmt=_hmt||[];(function(){var hm=document.createElement('script');hm.src='https://hm.baidu.com/hm.js?${BAIDU_TONGJI_ID}';document.head.appendChild(hm);})();`} />
+)}
+</head>
+<body>
+<nav>
+  <div class="nav-in">
+    <a href="/zh/" class="brand" style="text-decoration:none;color:inherit">
+      <svg width="34" height="34" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="#12796E"/><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"/></svg>
+      SafOil
+    </a>
+    <div class="nav-links">
+      <a href="/zh/products/biofuel-feedstock-malaysia">产品范围</a>
+      <a href="/zh/#buyers">采购合作</a>
+      <a href="/zh/#suppliers">供应合作</a>
+      <a href="/zh/#quality">质量与认证</a>
+      <a href="/zh/#about">关于我们</a>
+    </div>
+    <div class="nav-right">
+      <a href={enPath} class="lang-sw" hreflang="en" lang="en">EN</a>
+      <a href="/zh/#enquiry" class="btn">获取报价</a>
+    </div>
+  </div>
+</nav>
+
+<slot />
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand"><svg width="32" height="32" viewBox="0 0 34 34" fill="none" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="#12796E"/><path d="M17 7c4 5 6 8 6 11a6 6 0 11-12 0c0-3 2-6 6-11z" fill="#5FD0B0"/></svg>SafOil</div>
+        <p>马来西亚生物燃料原料供应商与出口商。废弃油脂、棕榈残余及酸化油，每批附检测报告，文件可追溯。</p>
+      </div>
+      <div class="foot-col"><h4>产品</h4>
+        <a href="/zh/products/used-cooking-oil-malaysia">废弃食用油 UCO</a>
+        <a href="/zh/products/pfad-supplier-malaysia">棕榈脂肪酸馏出物 PFAD</a>
+        <a href="/zh/products/palm-oil-residue-feedstock">POME 油与 EFB 油</a>
+        <a href="/zh/products/acid-oil-supplier-malaysia">酸化油与废白土油</a>
+        <a href="/zh/products/bio-heavy-oil-malaysia">生物重油</a>
+      </div>
+      <div class="foot-col"><h4>合作</h4>
+        <a href="/zh/#buyers">采购方</a>
+        <a href="/zh/#suppliers">供应方</a>
+        <a href="/zh/#quality">质量与认证</a>
+        <a href="/zh/#about">关于我们</a>
+        <a href={enPath} hreflang="en" lang="en">English</a>
+      </div>
+      <div class="foot-col"><h4>联系</h4>
+        <a href="mailto:sales@safoil.my">sales@safoil.my</a>
+        <a href="tel:+60162298119">+60 16-229 8119</a>
+        <a href="https://wa.me/60162298119" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="/zh/#about" style="line-height:1.4">马来西亚 雪兰莪州 黑风洞</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 SafOil 版权所有 · 公司注册号 20251026727</span>
+      <span class="mono">可持续 · 可追溯 · 稳定供应</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
