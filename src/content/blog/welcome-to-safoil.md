@@ -28,7 +28,7 @@ Every consignment is lab-tested before loading and ships with a certificate of a
 
 ## How we work
 
-Three principles guide every deal: **consistency** — the spec you contract is the spec you receive; **certification-ready supply** — ISCC-aligned, RED II–compatible documentation with full chain of custody; and **responsiveness** — a real trade desk that replies within three working days, spot or contract.
+Three principles guide every deal: **consistency** — the spec you contract is the spec you receive; **certification-ready supply** — ISCC-aligned, RED II–compatible documentation with full chain of custody; and **responsiveness** — a real trade desk that answers your enquiry directly, spot or contract.
 
 ## Let's talk
 
