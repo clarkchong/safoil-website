@@ -202,7 +202,7 @@ const products = [
         </div>
         <button type="button" id="send_wa" style="background:none;border:none;font:inherit;font-size:14px;color:var(--leaf);text-decoration:underline;cursor:pointer;margin-top:12px;padding:6px 0">或通过 WhatsApp 发送</button>
         <div class="copy-ok" id="copy_ok">已复制。粘贴到微信或邮件发给我们即可。</div>
-        <p style="font-size:13px;color:var(--mute);margin-top:12px" id="q_note">3 个工作日内回复 FOB / CIF 报价及样品 COA。</p>
+        <p style="font-size:13px;color:var(--mute);margin-top:12px" id="q_note">我们将回复 FOB / CIF 报价，并可提供样品 COA。</p>
       </div>
       <div class="enq-side">
         <div class="wechat">
@@ -228,7 +228,7 @@ const products = [
   var role = 'buyer';
   var $ = function (id) { return document.getElementById(id); };
   var TEXT = {
-    buyer:    { title: '获取报价', vol: '目标数量（吨/月）', port: '目的港', portPh: '例如：上海、宁波、鹿特丹', note: '3 个工作日内回复 FOB / CIF 报价及样品 COA。', head: 'SafOil 采购询盘' },
+    buyer:    { title: '获取报价', vol: '目标数量（吨/月）', port: '目的港', portPh: '例如：上海、宁波、鹿特丹', note: '我们将回复 FOB / CIF 报价，并可提供样品 COA。', head: 'SafOil 采购询盘' },
     supplier: { title: '提交货源信息', vol: '可供数量（吨/月）', port: '货源地 / 装货港', portPh: '例如：广东、山东、天津港', note: '我们会在审阅资料后联系您，安排样品检测。', head: 'SafOil 货源信息' }
   };
   function setRole(r) {
