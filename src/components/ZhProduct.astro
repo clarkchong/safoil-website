@@ -22,10 +22,11 @@ const enPath = `/products/${slug}`;
 
 const jsonld = [
   {
-    '@context': 'https://schema.org', '@type': 'Product', name: h1, description,
-    category: '生物燃料原料', url: SITE + path, inLanguage: 'zh-Hans',
-    brand: { '@type': 'Brand', name: 'SafOil' },
-    manufacturer: { '@type': 'Organization', name: 'SafOil', url: SITE + '/zh/' },
+    // Service, not Product: SafOil quotes per deal (no fixed price), so Product
+    // markup triggers Google Merchant-listing / Product-snippet errors.
+    '@context': 'https://schema.org', '@type': 'Service', name: h1, description,
+    serviceType: '生物燃料原料供应与出口', url: SITE + path, inLanguage: 'zh-Hans',
+    provider: { '@type': 'Organization', name: 'SafOil', url: SITE + '/zh/' },
   },
   {
     '@context': 'https://schema.org', '@type': 'BreadcrumbList',
