@@ -107,12 +107,12 @@ The winners won't be the buyers who pay the most for UCO. They'll be the ones wi
 
 ## Talk to SafOil
 
-SafOil, the biofuel feedstock arm of Universal Food Feed Sdn Bhd (UFF), supplies UCO, PFAD and bio heavy oil from Malaysia to buyers across Asia. If you're reviewing your 2027 feedstock mix, we'll help you compare options by specification, documentation and destination rules.
+SafOil supplies UCO, PFAD and bio heavy oil from Malaysia to buyers across Asia. If you're reviewing your 2027 feedstock mix, we'll help you compare options by specification, documentation and destination rules.
 
 [Send us your specification →](/#quote)
 
 - **WhatsApp:** [+60 16-229 8119](https://wa.me/60162298119)
-- **Email:** [sales@safoil.my](mailto:sales@safoil.my) · [sales@uffsb.com](mailto:sales@uffsb.com)
+- **Email:** [sales@safoil.my](mailto:sales@safoil.my)
 
 ## Sources
 
