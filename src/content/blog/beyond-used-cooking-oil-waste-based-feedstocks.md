@@ -107,7 +107,7 @@ The winners won't be the buyers who pay the most for UCO. They'll be the ones wi
 
 ## Talk to SafOil
 
-SafOil supplies UCO, PFAD and bio heavy oil from Malaysia to buyers across Asia. If you're reviewing your 2027 feedstock mix, we'll help you compare options by specification, documentation and destination rules.
+SafOil sources UCO, PFAD and bio heavy oil from Malaysia and other origins, and supplies buyers across Asia. If you're reviewing your 2027 feedstock mix, we'll help you compare options by specification, documentation and destination rules.
 
 [Send us your specification →](/#quote)
 
