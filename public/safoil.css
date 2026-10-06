@@ -307,3 +307,9 @@ footer p{font-size:14px;color:rgba(246,244,236,.6);max-width:300px}
 .cta-band p{color:rgba(241,246,245,.75);max-width:520px;margin:0 auto 28px}
 .article-meta{display:flex;gap:14px;align-items:center;margin-bottom:22px;font-size:13px;color:var(--mute)}
 .article-meta .cat{background:var(--ink);color:var(--brand-soft);padding:5px 12px;border-radius:6px;font-family:'IBM Plex Mono';font-size:10.5px;letter-spacing:.12em;text-transform:uppercase}
+.prose ol{margin:0 0 18px 22px}
+.prose .table-wrap{overflow-x:auto;margin:8px 0 22px;-webkit-overflow-scrolling:touch}
+.prose table{width:100%;min-width:640px;border-collapse:collapse;font-size:14.5px;color:#2c3d3a}
+.prose th,.prose td{padding:10px 12px;border-bottom:1px solid rgba(0,0,0,.09);text-align:left;vertical-align:top}
+.prose th{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border-bottom:2px solid var(--ink)}
+.prose tbody tr:nth-child(even){background:rgba(0,0,0,.025)}
