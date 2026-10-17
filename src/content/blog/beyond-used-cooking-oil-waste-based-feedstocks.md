@@ -1,7 +1,7 @@
 ---
 title: 'Beyond used cooking oil: the next wave of waste-based biofuel feedstocks'
 seoTitle: 'Beyond UCO: 8 Waste-Based Biofuel Feedstocks for SAF and HVO'
-description: UCO supply can't keep up with SAF demand. Compare eight alternative feedstocks — POME oil, PFAD, SBEO, tallow, acid oil and more — and where bio heavy oil fits.
+description: UCO supply can't keep up with SAF demand. Compare eight alternative feedstocks — POME oil, PFAD, SBEO, tallow, acid oil and more.
 category: Outlook
 pubDate: 2026-10-06
 draft: false
@@ -77,24 +77,6 @@ POME oil, PFAD, SBEO and tallow are the options that can be traded at volume tod
 
 Sources: as cited in each section above.
 
-## Where bio heavy oil fits
-
-Bio heavy oil is a strong alternative outlet, but it isn't a like-for-like replacement for UCO in SAF. It is made from the lower-grade residues that SAF plants can't use well, and it burns in boilers, power plants and ship engines that run on heavy fuel oil today.
-
-**What it is.** Bio heavy oil is blended from fatty-acid materials such as animal fats, residual cooking oil and biodiesel by-products. It has lower viscosity and a higher acid value than fossil heavy oil ([Korean Applied Science & Technology journal](https://koreascience.or.kr/article/JAKO201810263415754.page)). Because it uses bottom-of-the-barrel residues, it doesn't compete head-on with HEFA plants for premium UCO.
-
-**The evidence that it works:**
-
-- **Proven in power generation.** South Korea tested bio heavy oil at five bunker-C power stations from 2014 and approved it for commercial power generation from 2019 ([Korea Herald](https://www.koreaherald.com/article/1777640); [IEA Bioenergy](https://www.ieabioenergy.com/wp-content/uploads/2024/12/CountryReport2024_Korea_final.pdf)).
-- **Clear emission gains.** Compared with heavy oil, it produces almost no sulphur oxides, 39% less nitrogen oxide, 28% less fine dust and 85% less greenhouse gas, according to the Korea Petroleum Quality and Distribution Authority ([Korea Herald](https://www.koreaherald.com/article/1777640)).
-- **Low switching cost.** Existing bunker-C equipment can burn it, so buyers avoid new capital spending ([Korea Herald](https://www.koreaherald.com/article/1777640)).
-- **Real, policy-backed demand.** Korean generators must source 15% of their power from renewables in 2026 under the Renewable Portfolio Standard (RPS), and bio heavy oil is one route. Bio heavy oil tenders totalled about KRW 1.95 trillion between 2013 and 2025 ([Asia Business Daily](https://www.asiae.co.kr/en/article/2026073011144235911)). Korea's glass industry signed an agreement in June 2026 to explore it for furnaces ([Quantum](https://www.qcintel.com/biofuels/article/s-korea-glass-industry-bioenergy-group-to-explore-bio-heavy-oil-use-reports-67359.html)).
-- **A growing marine market.** Singapore sold a record 1.36 million tonnes of biofuel bunker blends in 2025, up 54% on 2024 ([S&P Global](https://www.spglobal.com/energy/en/news-research/latest-news/agriculture/011426-singapores-biobunker-sales-hit-record-high-of-136-mil-mt-in-2025)). Ship trials found no loss of engine performance and 16% lower well-to-wake CO2 with a 20% bio heavy fuel blend ([Renewable Energy, 2023](https://www.sciencedirect.com/science/article/abs/pii/S0960148123014581)).
-
-**What buyers should plan for.** The acid limit in the ISO 8217 marine fuel standard (2.5 mg KOH/g) caps marine blends at about 20%. NOx rose 17% in trials until injection timing was adjusted, and fuel transferred below 50°C clogged filters ([Renewable Energy, 2023](https://www.sciencedirect.com/science/article/abs/pii/S0960148123014581)). Specification, heating and blending should be agreed before shipment.
-
-**Bottom line:** keep UCO for SAF and HVO, where it earns the highest premium. Bio heavy oil turns the residues that would otherwise be hard to sell into a fuel with proven buyers in power, industry and shipping. See our [Bio Heavy Oil product page](/products/bio-heavy-oil-malaysia).
-
 ## What smart buyers are doing now
 
 The winners won't be the buyers who pay the most for UCO. They'll be the ones with three or four reliable feedstocks they can trace.
@@ -107,7 +89,7 @@ The winners won't be the buyers who pay the most for UCO. They'll be the ones wi
 
 ## Talk to SafOil
 
-SafOil sources UCO, PFAD and bio heavy oil from Malaysia and other origins, and supplies buyers across Asia. If you're reviewing your 2027 feedstock mix, we'll help you compare options by specification, documentation and destination rules.
+SafOil sources UCO, PFAD and other residue oils from Malaysia and other origins, and supplies buyers across Asia. If you're reviewing your 2027 feedstock mix, we'll help you compare options by specification, documentation and destination rules.
 
 [Send us your specification →](/#quote)
 
@@ -134,10 +116,3 @@ SafOil sources UCO, PFAD and bio heavy oil from Malaysia and other origins, and 
 - [Pretreatment of HVO feedstocks — Biobased Diesel](https://www.biobased-diesel.com/post/requirements-and-solutions-for-pretreatment-of-hvo-feedstocks)
 - [Idemitsu pongamia trial — Hydrocarbon Processing](https://hydrocarbonprocessing.com/news/2025/01/idemitsu-to-begin-trial-of-non-edible-oilseed-crop-for-saf/) · [Canopy Energies pongamia — S&P Global](https://www.spglobal.com/energy/en/news-research/latest-news/agriculture/012126-interview-canopy-plants-largest-pongamia-acreage-rooting-steady-saf-takeoff)
 - [ISCC guidance: waste and residues from food processing](https://www.iscc-system.org/wp-content/uploads/2025/08/ISCC_WnR_Guidance_Document_v1.2_final.pdf)
-- [South Korea to generate electricity with bio-heavy oil — Korea Herald](https://www.koreaherald.com/article/1777640)
-- [Implementation of bioenergy in the Republic of Korea — IEA Bioenergy, 2024](https://www.ieabioenergy.com/wp-content/uploads/2024/12/CountryReport2024_Korea_final.pdf)
-- [Lubricity of bio-heavy oil for power generation — Journal of the Korean Applied Science and Technology](https://koreascience.or.kr/article/JAKO201810263415754.page)
-- [Biofuel bid case and RPS context — Asia Business Daily, 30 Jul 2026](https://www.asiae.co.kr/en/article/2026073011144235911)
-- [Korea glass industry to explore bio-heavy oil — Quantum, 23 Jun 2026](https://www.qcintel.com/biofuels/article/s-korea-glass-industry-bioenergy-group-to-explore-bio-heavy-oil-use-reports-67359.html)
-- [Singapore biobunker sales hit record 1.36 Mt in 2025 — S&P Global](https://www.spglobal.com/energy/en/news-research/latest-news/agriculture/011426-singapores-biobunker-sales-hit-record-high-of-136-mil-mt-in-2025)
-- [Feasibility study on bio-heavy fuel as an alternative for marine fuel — Renewable Energy, 2023](https://www.sciencedirect.com/science/article/abs/pii/S0960148123014581)
