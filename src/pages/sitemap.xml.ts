@@ -9,14 +9,12 @@ const staticPages = [
   { path: '/products/used-cooking-oil-malaysia', lastmod: '2026-10-03', priority: '0.9' },
   { path: '/products/pfad-supplier-malaysia', lastmod: '2026-10-03', priority: '0.8' },
   { path: '/products/palm-oil-residue-feedstock', lastmod: '2026-10-03', priority: '0.8' },
-  { path: '/products/acid-oil-supplier-malaysia', lastmod: '2026-10-03', priority: '0.8' },
   // Simplified Chinese (/zh/)
   { path: '/zh/', lastmod: '2026-10-03', priority: '0.9' },
   { path: '/zh/products/biofuel-feedstock-malaysia', lastmod: '2026-10-03', priority: '0.8' },
   { path: '/zh/products/used-cooking-oil-malaysia', lastmod: '2026-10-03', priority: '0.8' },
   { path: '/zh/products/pfad-supplier-malaysia', lastmod: '2026-10-03', priority: '0.7' },
   { path: '/zh/products/palm-oil-residue-feedstock', lastmod: '2026-10-03', priority: '0.7' },
-  { path: '/zh/products/acid-oil-supplier-malaysia', lastmod: '2026-10-03', priority: '0.7' },
 ];
 
 export async function GET() {
