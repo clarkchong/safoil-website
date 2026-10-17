@@ -21,7 +21,7 @@ We source, grade and export a full range of waste-based and residual oil feedsto
 - **Used Cooking Oil (UCO)** — filtered, standard and low-FFA premium grades
 - **PFAD** — high-FFA palm refining co-product, bulk export volumes
 - **POME and EFB oil** — Annex IX advanced palm residues, double-counting eligible under RED II
-- **SBEO and vegetable acid oils** — soya, cottonseed and rice bran acid oils
+- **SBEO** — spent bleaching earth oil, an Annex IX Part A advanced residue
 - **Tallow and fish oil** — animal-fat and marine lipid feedstock
 
 Every consignment is lab-tested before loading and ships with a certificate of analysis, FOB Malaysian ports or CIF to your discharge port.

@@ -3,7 +3,7 @@ title: 'Vegetable acid oils explained: soya, cottonseed and rice bran acid oil'
 description: A buyer's introduction to vegetable acid oils, how they are produced, what they are used for, and what to check before you buy.
 category: Product Guide
 pubDate: 2026-08-09
-draft: false
+draft: true
 ---
 
 Vegetable acid oils sit in the same family as PFAD but come from different crops — soya, cottonseed and rice bran — and buyers who only know palm-based feedstock often overlook them.

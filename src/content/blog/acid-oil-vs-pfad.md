@@ -75,7 +75,7 @@ There is no universal winner. A rough guide:
 
 ## Where SafOil fits
 
-If you are comparing acid oil grades, or deciding between soapstock and PFAD for a specific plant, send us your specification and tell us what your pretreatment can handle. We can respond with availability and documentation. See our product pages for [PFAD](/products/pfad-supplier-malaysia) and [acid oil](/products/acid-oil-supplier-malaysia).
+If you are comparing acid oil grades, or deciding between soapstock and PFAD for a specific plant, send us your specification and tell us what your pretreatment can handle. We can respond with availability and documentation. See our [PFAD product page](/products/pfad-supplier-malaysia).
 
 [Send us your specification →](/#quote)
 
