@@ -18,14 +18,12 @@ const products = [
   { zh: '动物油脂', en: 'Tallow', note: '炼制动物脂，一类 / 三类（Cat 1 / Cat 3）', use: 'FAME · HVO', slug: '' },
   { zh: '鱼油', en: 'Fish oil', note: '残余及废弃级海洋油脂', use: '生物燃料原料', slug: '' },
   { zh: '棕榈脂肪酸馏出物', en: 'PFAD', note: '棕榈精炼副产品，高游离脂肪酸，大宗出口', use: '生物柴油 · 油脂化工', slug: 'pfad-supplier-malaysia' },
-  { zh: '棕榈油厂废水油 / 空果串油', en: 'POME / EFB oil', note: 'RED II 附录 IX 先进原料，可双倍计算', use: 'HVO · SAF', slug: 'palm-oil-residue-feedstock' },
-  { zh: '废白土油', en: 'SBEO', note: '附录 IX A 部分先进残余原料，高游离脂肪酸', use: 'FAME · HVO', slug: '' },
   { zh: 'SJ50 混合脂肪酸', en: 'SJ50', note: '游离脂肪酸 ≤50%，非危险品，可提供规格书', use: '电厂 · 工业锅炉 · 船用燃料', slug: '' },
 ];
 ---
 <Zh
-  title="马来西亚生物燃料原料供应商 | UCO、PFAD、POME、废白土油 — SafOil"
-  description="SafOil 是马来西亚生物燃料原料供应商与出口商，供应废弃食用油（UCO）、PFAD、POME 油、废白土油等，每批附独立检测报告（COA），FOB / CIF 出口；同时长期寻找稳定的上游供应商。"
+  title="马来西亚生物燃料原料供应商 | UCO、PFAD、动物油脂、SJ50 — SafOil"
+  description="SafOil 是马来西亚生物燃料原料供应商与出口商，供应废弃食用油（UCO）、动物油脂、PFAD、SJ50 混合脂肪酸等，每批附独立检测报告（COA），FOB / CIF 出口；同时长期寻找稳定的上游供应商。"
   path="/zh/"
   enPath="/"
   jsonld={jsonld}
@@ -35,7 +33,7 @@ const products = [
   <div class="wrap">
     <span class="kicker mono">马来西亚 · 生物燃料原料 供应与采购</span>
     <h1>一个可追溯的伙伴，<br />连接原料的两端。</h1>
-    <p class="hero-sub">SafOil 立足马来西亚，向生物柴油（FAME）、加氢植物油（HVO）及可持续航空燃料（SAF）生产商供应废弃油脂与棕榈残余原料；同时，我们长期寻找货源稳定、文件齐全的上游供应商。</p>
+    <p class="hero-sub">SafOil 立足马来西亚，向生物柴油（FAME）、加氢植物油（HVO）及可持续航空燃料（SAF）生产商供应废弃油脂、PFAD 及 SJ50 等原料；同时，我们长期寻找货源稳定、文件齐全的上游供应商。</p>
 
     <div class="role-grid">
       <div class="role buy">
@@ -186,8 +184,7 @@ const products = [
           <div class="field"><label for="q_product">品名</label>
             <select id="q_product">
               <option>废弃食用油（UCO）</option><option>动物油脂（Tallow）</option><option>鱼油（Fish oil）</option>
-              <option>棕榈脂肪酸馏出物（PFAD）</option><option>POME 油</option><option>EFB 油</option>
-              <option>废白土油（SBEO）</option>
+              <option>棕榈脂肪酸馏出物（PFAD）</option>
               <option>SJ50 混合脂肪酸</option><option>其他</option>
             </select>
           </div>
