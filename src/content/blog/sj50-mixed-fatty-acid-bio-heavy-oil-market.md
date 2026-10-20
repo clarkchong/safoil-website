@@ -57,48 +57,19 @@ The common thread is simple: **agree the specification, heating and blending pla
 
 ## Where SJ50 fits
 
-SJ50 (spec code SJ50A) is a mixed fatty acid: a blend of saturated and unsaturated straight-chain aliphatic monocarboxylic acids. It is made as a feedstock for bio heavy oil and biofuel, and it also serves the other uses above.
+SJ50 is a mixed fatty acid: a blend of saturated and unsaturated fatty acids. It is a fuel and a feedstock, matched to the uses above.
 
-### Key specifications
+| | SJ50 mixed fatty acid |
+|---|---|
+| Free fatty acid (FFA) | 50% max |
+| Main use | Renewable fuel for power plants, industrial boilers and marine engines |
+| Other uses | Feedstock for biodiesel, oleochemicals, animal feed and lubricants |
+| Transport class | Not classified as dangerous goods |
+| Packing | Flexitank, IBC or steel drum |
+| Incoterms | FOB or CIF to your port |
+| Documents | Certificate of analysis per shipment; full specification sheet, MSDS and handling data on request |
 
-| Parameter | Specification | Test method |
-|---|---|---|
-| Free fatty acid (FFA) | 50% max | AOCS Ca 5a-40 |
-| Moisture & impurities | 3% max | AOCS Ca 2c-25 |
-| Iodine value | 40–80 | AOCS Cd 1-25 |
-| Saponification value | 140–180 | AOCS Cd 3-25 |
-| Unsaponifiable matter | 4–8% | AOCS Ca 6a-40 |
-| Solidification point | 47 °C | ASTM D938 |
-| Flash point | 180 °C | Cleveland Open Cup |
-| Appearance | Dark brown / black | Visual |
-| Biodegradability | Readily biodegradable | OECD 301B |
-| Transport hazard | Non-dangerous goods (not classified) | IMDG / IATA / ADR |
-
-CAS No. 67701-03-5 · HS code 3823.19. Values are indicative; the signed certificate of analysis for each shipment is the reference for that cargo.
-
-**What these numbers mean for you:**
-
-- **Solidification point of 47 °C.** Plan heated storage and transfer, in line with the 50°C filter finding above. This is the most important handling point.
-- **Flash point of 180 °C** and **non-dangerous goods** status keep storage, insurance and shipping simple compared with fossil fuel oils.
-- **Moisture and impurities of 3% max** matter for burner and filter life. Ask for the batch COA before loading.
-- **FFA up to 50%** gives a high acid value. Check your tank materials and blend ratio against your fuel standard.
-
-### Applications
-
-| Sector | Use | Suitability |
-|---|---|---|
-| Bio heavy oil | Power plant, industrial boiler, marine fuel | Primary |
-| Biodiesel | FAME / HVO feedstock | Moderate |
-| Oleochemicals | Soaps, surfactants, fatty alcohols, esters | Suitable |
-| Animal feed (energy) | Calcium salts of fatty acids, rumen-bypass fat | Suitable |
-| Lubricants & greases | Metallic soaps and lubricant additives | Suitable |
-
-### Packing and trade terms
-
-- **Packing:** flexitank (20,000–24,000 litres), IBC tote (1,000 litres) or 200-litre steel drum. Minimum order 20 MT for each format.
-- **Incoterms:** FOB Port Klang or CIF to your destination port.
-- **Certification:** ISCC EU, with sustainability declaration.
-- **Documents:** COA per shipment; full MSDS and handling data on request.
+The full specification, with test methods, is shared with trade buyers on request.
 
 ### Which needs it suits
 
