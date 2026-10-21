@@ -65,8 +65,6 @@ SJ50 is a mixed fatty acid: a blend of saturated and unsaturated fatty acids. It
 | Main use | Renewable fuel for power plants, industrial boilers and marine engines |
 | Other uses | Feedstock for biodiesel, oleochemicals, animal feed and lubricants |
 | Transport class | Not classified as dangerous goods |
-| Packing | Flexitank, IBC or steel drum |
-| Incoterms | FOB or CIF to your port |
 | Documents | Certificate of analysis per shipment; full specification sheet, MSDS and handling data on request |
 
 The full specification, with test methods, is shared with trade buyers on request.
